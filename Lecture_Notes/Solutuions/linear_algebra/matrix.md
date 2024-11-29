@@ -672,7 +672,7 @@ $$C_{31} = \text{det}\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} = (0)(0) - (1)
 $$C_{32} = -\text{det}\begin{pmatrix} 2 & 1 \\ 0 & 0 \end{pmatrix} = -(0 - 0) = 0$$
 
 $$C_{33} = \text{det}\begin{pmatrix} 2 & 0 \\ 0 & 1 \end{pmatrix} = (2)(1) - (0)(0) = 2$$
-
+ 
 Thus, the cofactor matrix is:
  
 $$
@@ -822,213 +822,550 @@ The **Gauss Method** involves the following steps to find the inverse of a matri
 2. Use row operations to transform the augmented matrix into reduced row-echelon form (RREF), such that the left side becomes the identity matrix.
 3. The right side of the augmented matrix becomes the inverse matrix \( M^{-1} \).
 
----
+### Steps:
 
-### 1. Matrix \( A \)
-
-Matrix \( A \):
-
-$$
-A =
-\begin{pmatrix}
-1 & 2 \\
-3 & 4
-\end{pmatrix}
-$$
-
-#### Steps:
-
-1. Augment \( A \) with the identity matrix:
+1. **Augment the Matrix**:
+   - Combine \( M \) with the identity matrix \( I \) of the same dimensions to form an augmented matrix $$[M | I]$$
+   
+   For example, if \( M \) is a 3 * 3 matrix:
 
 $$
+M = 
+\begin{bmatrix}
+a_{11} & a_{12} & a_{13} \\
+a_{21} & a_{22} & a_{23} \\
+a_{31} & a_{32} & a_{33}
+\end{bmatrix}
+\quad \longrightarrow \quad
 \left[
-\begin{array}{cc|cc}
-1 & 2 & 1 & 0 \\
-3 & 4 & 0 & 1
+\begin{array}{ccc|ccc}
+a_{11} & a_{12} & a_{13} & 1 & 0 & 0 \\
+a_{21} & a_{22} & a_{23} & 0 & 1 & 0 \\
+a_{31} & a_{32} & a_{33} & 0 & 0 & 1
 \end{array}
 \right]
 $$
 
-2. Apply row operations:
 
-   - \( R_2 \to R_2 - 3R_1 \):
+2. **Transform the Left Side to the Identity Matrix**:
+   - Apply **elementary row operations** to the augmented matrix. The goal is to convert the left-hand portion (original \( M \)) into the identity matrix \( I \).
+   - Elementary row operations include:
+     - Swapping two rows $$ R_i \leftrightarrow R_j $$
+     - Multiplying a row by a non-zero scalar $$ k \cdot R_i $$
+     - Adding or subtracting a multiple of one row to another $$ R_i \pm k \cdot R_j $$
 
-$$
-\left[
-\begin{array}{cc|cc}
-1 & 2 & 1 & 0 \\
-0 & -2 & -3 & 1
-\end{array}
-\right]
-$$
-
-   - \( R_2 \to \frac{R_2}{-2} \):
-
-$$
-\left[
-\begin{array}{cc|cc}
-1 & 2 & 1 & 0 \\
-0 & 1 & \frac{3}{2} & -\frac{1}{2}
-\end{array}
-\right]
-$$
-
-   - \( R_1 \to R_1 - 2R_2 \):
-
-$$
-\left[
-\begin{array}{cc|cc}
-1 & 0 & -2 & 1 \\
-0 & 1 & \frac{3}{2} & -\frac{1}{2}
-\end{array}
-\right]
-$$
-
-The right side is the inverse of \( A \):
-
-$$
-A^{-1} =
-\begin{pmatrix}
--2 & 1 \\
-\frac{3}{2} & -\frac{1}{2}
-\end{pmatrix}
-$$
+3. **Interpret the Right Side as the Inverse**:
+   - Once the left side becomes \( I \), the right side will be $$ M^{-1} $$
 
 ---
 
-### 2. Matrix \( B \)
+## Example:
 
-Matrix \( B \):
+Find the inverse of the matrix:
 
 $$
-B =
-\begin{pmatrix}
+M = \begin{bmatrix}
+2 & 1 \\
+5 & 3
+\end{bmatrix}
+$$
+
+### Step 1: Augment with the Identity Matrix:
+$$
+\left[
+\begin{array}{cc|cc}
+2 & 1 & 1 & 0 \\
+5 & 3 & 0 & 1
+\end{array}
+\right]
+$$
+
+### Step 2: Row Operations to Form \( I \) on the Left:
+
+1. Make the top-left entry \( 1 \) by dividing the first row by 2:
+
+$$
+R_1 \rightarrow \frac{1}{2} R_1 \quad \Rightarrow \quad
+\left[
+\begin{array}{cc|cc}
+1 & 0.5 & 0.5 & 0 \\
+5 & 3 & 0 & 1
+\end{array}
+\right]
+$$
+
+
+2. Eliminate the first entry in the second row ( R_2 ):
+
+$$
+R_2 \rightarrow R_2 - 5 \cdot R_1 \quad \Rightarrow \quad
+\left[
+\begin{array}{cc|cc}
+1 & 0.5 & 0.5 & 0 \\
+0 & 0.5 & -2.5 & 1
+\end{array}
+\right]
+$$
+
+3. Make the pivot in the second row a \( 1 \) by dividing \( R_2 \) by 0.5:
+
+$$
+R_2 \rightarrow \frac{1}{0.5} R_2 \quad \Rightarrow \quad
+\left[
+\begin{array}{cc|cc}
+1 & 0.5 & 0.5 & 0 \\
+0 & 1 & -5 & 2
+\end{array}
+\right]
+$$
+
+4. Eliminate the second entry in the first row (\( R_1 \)):
+
+$$
+R_1 \rightarrow R_1 - 0.5 \cdot R_2 \quad \Rightarrow \quad
+\left[
+\begin{array}{cc|cc}
+1 & 0 & 3 & -1 \\
+0 & 1 & -5 & 2
+\end{array}
+\right]
+$$
+
+### Step 3: The Right Side is the Inverse:
+
+$$
+M^{-1} =
+\begin{bmatrix}
+3 & -1 \\
+-5 & 2
+\end{bmatrix}
+$$
+
+---
+
+This method generalizes to any n * n  matrix, provided it is invertible (i.e., det(M) !=0). If \( M \) cannot be reduced to \( I \), the matrix is singular and does not have an inverse.
+
+## 7. Linear Equations old school
+
+Given: 
+
+$$
+3x - 2y = 5, \quad 2x + 3y = 7
+$$
+
+1. Solve for \( y \) in terms of \( x \) from the first equation:  
+
+$$
+y = \frac{3x - 5}{2}
+$$
+
+2. Substitute into the second equation:  
+
+$$
+2x + 3 \left(\frac{3x - 5}{2}\right) = 7
+$$  
+
+$$
+13x = 29 \quad \implies \quad x = \frac{29}{13}
+$$
+
+3. Solve for \( y \): 
+
+$$
+y = \frac{3 \cdot \frac{29}{13} - 5}{2} = \frac{11}{13}
+$$
+
+### Solution:  
+
+$$
+x = \frac{29}{13}, \quad y = \frac{11}{13}
+$$
+
+---
+
+Given:  
+
+$$
+2x - 3y = 10, \quad 4x + 5y = 20
+$$
+
+1. Solve for \( y \):  
+
+$$
+y = \frac{2x - 10}{3}
+$$
+
+2. Substitute into the second equation:  
+
+$$
+4x + 5 \left(\frac{2x - 10}{3}\right) = 20
+$$  
+$$
+x = 5, \quad y = 0
+$$
+
+### Solution: 
+
+$$
+x = 5, \quad y = 0
+$$
+
+---
+
+Given: 
+
+$$
+2x - y + z = 3, \quad x + 2y - z = 1, \quad 3x - y + 2z = 11
+$$
+
+1. Solve for \( z \): 
+
+$$
+z = 3 - 2x + y
+$$
+
+2. Substitute into the second and third equations:  
+
+$$
+3x + y = 4, \quad -x + y = 5
+$$
+
+3. Solve:  
+
+$$
+x = -\frac{1}{4}, \quad y = \frac{19}{4}, \quad z = \frac{45}{4}
+$$
+
+### Solution:  
+
+$$
+x = -\frac{1}{4}, \quad y = \frac{19}{4}, \quad z = \frac{45}{4}
+$$
+
+
+## 8. Linear equations by Cramer's Rule
+
+![alt text](<Screenshot 2024-11-27 at 8.52.25 PM.png>)
+
+$$
+\begin{cases}
+2x_1 - 3x_2 = 7 \\
+3x_1 + 5x_2 = 2
+\end{cases}
+$$
+
+Matrix form:
+
+$$
+A = \begin{bmatrix} 2 & -3 \\ 3 & 5 \end{bmatrix}, \quad \mathbf{x} = \begin{bmatrix} x_1 \\ x_2 \end{bmatrix}, \quad \mathbf{b} = \begin{bmatrix} 7 \\ 2 \end{bmatrix}
+$$
+
+Determinant of \( A \):
+
+$$
+\text{det}(A) = (2)(5) - (-3)(3) = 10 + 9 = 19
+$$
+
+For \( x_1 \), replace the first column of A with B:
+
+$$
+A_1 = \begin{bmatrix} 7 & -3 \\ 2 & 5 \end{bmatrix}, \quad \text{det}(A_1) = (7)(5) - (-3)(2) = 35 + 6 = 41
+$$
+
+For \( x_2 \), replace the second column of A with B:
+
+$$
+A_2 = \begin{bmatrix} 2 & 7 \\ 3 & 2 \end{bmatrix}, \quad \text{det}(A_2) = (2)(2) - (7)(3) = 4 - 21 = -17
+$$
+
+Now apply Cramer's Rule:
+
+$$
+x_1 = \frac{\text{det}(A_1)}{\text{det}(A)} = \frac{41}{19}, \quad x_2 = \frac{\text{det}(A_2)}{\text{det}(A)} = \frac{-17}{19}
+$$
+
+### Final Solution:
+
+$$
+x_1 = \frac{41}{19}, \quad x_2 = \frac{-17}{19}
+$$
+
+---
+
+### 2. Solve the system:
+
+$$
+\begin{cases}
+2x + y - z = 1 \\
+x - y + 2z = 4 \\
+3x - 2z = -1
+\end{cases}
+$$
+
+Matrix form:
+
+$$
+A = \begin{bmatrix} 2 & 1 & -1 \\ 1 & -1 & 2 \\ 3 & 0 & -2 \end{bmatrix}, \quad \mathbf{x} = \begin{bmatrix} x \\ y \\ z \end{bmatrix}, \quad \mathbf{b} = \begin{bmatrix} 1 \\ 4 \\ -1 \end{bmatrix}
+$$
+
+Apply Cramer's Rule as shown in the first example. Calculate the determinants for \( x \), \( y \), and \( z \).
+
+---
+
+### 3. Solve the system:
+
+$$
+\begin{cases}
+x + y + z - t = 2 \\
+x - z + 2t = 6 \\
+2x - 3y + t = 4 \\
+3x + y + 3z - 4t = -2
+\end{cases}
+$$
+
+Matrix form:
+
+$$
+A = \begin{bmatrix} 1 & 1 & 1 & -1 \\ 1 & 0 & -1 & 2 \\ 2 & -3 & 0 & 1 \\ 3 & 1 & 3 & -4 \end{bmatrix}, \quad \mathbf{x} = \begin{bmatrix} x \\ y \\ z \\ t \end{bmatrix}, \quad \mathbf{b} = \begin{bmatrix} 2 \\ 6 \\ 4 \\ -2 \end{bmatrix}
+$$
+
+Apply Cramer's Rule by finding the determinants for each variable.
+
+---
+
+### 4. Why can't the system be solved using Cramer's Rule?
+
+Given system:
+
+$$
+\begin{cases}
+x_1 + 2x_2 + 3x_3 = 3 \\
+4x_1 + 5x_2 + 6x_3 = 2 \\
+7x_1 + 8x_2 + 9x_3 = 1
+\end{cases}
+$$
+
+The determinant of the coefficient matrix \( A \) is:
+
+$$
+\text{det}(A) = \begin{vmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{vmatrix} = 0
+$$
+
+Since the determinant is zero, the system has no unique solution and cannot be solved using Cramer's Rule.
+
+## 9. Linear equations by Gauss Elimination
+
+### 1. Solve the system:
+
+$$
+\begin{cases}
+x + 2y - 2z = 4 \\
+2x + y + z = 0 \\
+3x + 2y + z = 1
+\end{cases}
+$$
+
+The augmented matrix is:
+
+$$
+\left[
+\begin{array}{ccc|c}
+1 & 2 & -2 & 4 \\
+2 & 1 & 1 & 0 \\
+3 & 2 & 1 & 1
+\end{array}
+\right]
+$$
+
+Perform row operations to eliminate variables and solve for \( x \), \( y \), and \( z \). After Gaussian elimination:
+
+Row 2: 
+
+$$ R_2 \rightarrow R_2 - 2R_1 $$
+
+Row 3: 
+
+$$ R_3 \rightarrow R_3 - 3R_1 $$
+
+Continue simplifying to get the values of \( x \), \( y \), and \( z \).
+
+---
+
+### 2. Solve the system:
+
+$$
+\begin{cases}
+x + y + z - t = 2 \\
+2x + y + z = 3 \\
+-x + z - t = 0 \\
+3x + 2y - z + 2t = -1
+\end{cases}
+$$
+
+The augmented matrix is:
+
+$$
+\left[
+\begin{array}{cccc|c}
+1 & 1 & 1 & -1 & 2 \\
+2 & 1 & 1 & 0 & 3 \\
+-1 & 0 & 1 & -1 & 0 \\
+3 & 2 & -1 & 2 & -1
+\end{array}
+\right]
+$$
+
+Apply Gaussian elimination to simplify this system and find \( x \), \( y \), \( z \), and \( t \).
+
+---
+
+### 3. Solve the system:
+
+$$
+\begin{cases}
+x + y - z - t = 0 \\
+2x + 3y - 2z + t = 4 \\
+3x + 5z = 0 \\
+-x + y - 3z + 2t = 3
+\end{cases}
+$$
+
+The augmented matrix is:
+
+$$
+\left[
+\begin{array}{cccc|c}
+1 & 1 & -1 & -1 & 0 \\
+2 & 3 & -2 & 1 & 4 \\
+3 & 0 & 5 & 0 & 0 \\
+-1 & 1 & -3 & 2 & 3
+\end{array}
+\right]
+$$
+
+Use row operations to simplify the system and solve for \( x \), \( y \), \( z \), and \( t \).
+
+## 10. Linear equations by Matrix Inversion
+
+![alt text](<Screenshot 2024-11-27 at 9.11.27 PM.png>)
+
+### 1. Solve the system:
+
+$$
+\begin{cases}
+x + 2y + 3z = 5 \\
+2y + 3z = 4 \\
+3z = 3
+\end{cases}
+$$
+
+Write the system in matrix form:
+
+$$
+\begin{bmatrix}
 1 & 2 & 3 \\
-4 & 5 & 1 \\
-2 & 3 & 2
-\end{pmatrix}
+0 & 2 & 3 \\
+0 & 0 & 3
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix} =
+\begin{bmatrix}
+5 \\
+4 \\
+3
+\end{bmatrix}
 $$
 
-#### Steps:
-
-1. Augment \( B \) with the identity matrix:
+Find the inverse of the coefficient matrix:
 
 $$
-\left[
-\begin{array}{ccc|ccc}
-1 & 2 & 3 & 1 & 0 & 0 \\
-4 & 5 & 1 & 0 & 1 & 0 \\
-2 & 3 & 2 & 0 & 0 & 1
-\end{array}
-\right]
+A = \begin{bmatrix}
+1 & 2 & 3 \\
+0 & 2 & 3 \\
+0 & 0 & 3
+\end{bmatrix}, \quad A^{-1} = \begin{bmatrix}
+1 & -1 & 0 \\
+0 & 1 & -1 \\
+0 & 0 & \frac{1}{3}
+\end{bmatrix}
 $$
 
-2. Use row operations to transform the left side into the identity matrix. After performing the steps (detailed calculations omitted for brevity):
+Multiply 
+
+$$ A^{-1} $$
+
+by the constant matrix to solve for 
+
+$$ \begin{bmatrix} x \\ y \\ z \end{bmatrix} $$
+
+ =
 
 $$
-\left[
-\begin{array}{ccc|ccc}
-1 & 0 & 0 & -1 & \frac{4}{3} & -\frac{1}{3} \\
-0 & 1 & 0 & \frac{2}{3} & -\frac{5}{3} & \frac{2}{3} \\
-0 & 0 & 1 & \frac{2}{3} & -\frac{1}{3} & \frac{1}{3}
-\end{array}
-\right]
+\begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix}
+= A^{-1} \begin{bmatrix} 5 \\ 4 \\ 3 \end{bmatrix}
+= \begin{bmatrix}
+1 & -1 & 0 \\
+0 & 1 & -1 \\
+0 & 0 & \frac{1}{3}
+\end{bmatrix}
+\begin{bmatrix}
+5 \\
+4 \\
+3
+\end{bmatrix}
+= \begin{bmatrix}
+2 \\
+1 \\
+1
+\end{bmatrix}
 $$
 
-The right side is the inverse of \( B \):
+### Final Solution:
 
 $$
-B^{-1} =
-\begin{pmatrix}
--1 & \frac{4}{3} & -\frac{1}{3} \\
-\frac{2}{3} & -\frac{5}{3} & \frac{2}{3} \\
-\frac{2}{3} & -\frac{1}{3} & \frac{1}{3}
-\end{pmatrix}
-$$
-
----
-
-### 3. Matrix \( C \)
-
-Matrix \( C \):
-
-$$
-C =
-\begin{pmatrix}
-0 & 0 & 1 \\
-0 & 1 & 0 \\
-1 & 0 & 0
-\end{pmatrix}
-$$
-
-#### Steps:
-
-1. Augment \( C \) with the identity matrix:
-
-$$
-\left[
-\begin{array}{ccc|ccc}
-0 & 0 & 1 & 1 & 0 & 0 \\
-0 & 1 & 0 & 0 & 1 & 0 \\
-1 & 0 & 0 & 0 & 0 & 1
-\end{array}
-\right]
-$$
-
-2. Use row operations to transform the left side into the identity matrix:
-
-   - Swap \( R_1 \) and \( R_3 \):
-
-$$
-\left[
-\begin{array}{ccc|ccc}
-1 & 0 & 0 & 0 & 0 & 1 \\
-0 & 1 & 0 & 0 & 1 & 0 \\
-0 & 0 & 1 & 1 & 0 & 0
-\end{array}
-\right]
-$$
-
-The right side is the inverse of \( C \):
-
-$$
-C^{-1} =
-\begin{pmatrix}
-0 & 0 & 1 \\
-0 & 1 & 0 \\
-1 & 0 & 0
-\end{pmatrix}
+x = 2, \quad y = 1, \quad z = 1
 $$
 
 ---
 
-### Final Results
-
-1. \( A^{-1} \):
+### 2. Solve the system:
 
 $$
-\begin{pmatrix}
--2 & 1 \\
-\frac{3}{2} & -\frac{1}{2}
-\end{pmatrix}
+\begin{cases}
+x_1 + 2x_2 + 3x_3 = 41 \\
+4x_1 + 5x_2 + 6x_3 = 93 \\
+7x_1 + 8x_2 + 9x_3 = 145
+\end{cases}
 $$
 
-2. \( B^{-1} \):
+Write the system in matrix form:
 
 $$
-\begin{pmatrix}
--1 & \frac{4}{3} & -\frac{1}{3} \\
-\frac{2}{3} & -\frac{5}{3} & \frac{2}{3} \\
-\frac{2}{3} & -\frac{1}{3} & \frac{1}{3}
-\end{pmatrix}
+\begin{bmatrix}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+7 & 8 & 9
+\end{bmatrix}
+\begin{bmatrix}
+x_1 \\
+x_2 \\
+x_3
+\end{bmatrix} =
+\begin{bmatrix}
+41 \\
+93 \\
+145
+\end{bmatrix}
 $$
 
-3. \( C^{-1} \):
+Find the inverse of the coefficient matrix \( A \). However, this matrix is **singular** (its determinant is 0), so it **does not have an inverse**. Hence, the system has no unique solution.
 
-$$
-\begin{pmatrix}
-0 & 0 & 1 \\
-0 & 1 & 0 \\
-1 & 0 & 0
-\end{pmatrix}
-$$
+### Conclusion:
+Since the determinant of \( A \) is 0, the system cannot be solved using matrix inversion.
