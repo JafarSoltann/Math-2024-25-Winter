@@ -206,6 +206,35 @@ $$
 43 & 50
 \end{pmatrix}
 $$
+Certainly! Here's your initial expression with the intermediate steps added for clarity:
+
+$$
+\mathbf{A} \cdot \mathbf{B} =
+\begin{pmatrix}
+1 & 2 \\ 
+3 & 4
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+5 & 6 \\ 
+7 & 8
+\end{pmatrix}
+=
+\begin{pmatrix}
+(1 \cdot 5 + 2 \cdot 7) & (1 \cdot 6 + 2 \cdot 8) \\ 
+(3 \cdot 5 + 4 \cdot 7) & (3 \cdot 6 + 4 \cdot 8)
+\end{pmatrix}
+=
+\begin{pmatrix}
+5 + 14 & 6 + 16 \\ 
+15 + 28 & 18 + 32
+\end{pmatrix}
+=
+\begin{pmatrix}
+19 & 22 \\ 
+43 & 50
+\end{pmatrix}
+$$
 
 #### 3.2 $\mathbf{B} \cdot \mathbf{A}$
 
