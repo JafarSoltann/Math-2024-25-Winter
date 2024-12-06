@@ -206,35 +206,6 @@ $$
 43 & 50
 \end{pmatrix}
 $$
-Certainly! Here's your initial expression with the intermediate steps added for clarity:
-
-$$
-\mathbf{A} \cdot \mathbf{B} =
-\begin{pmatrix}
-1 & 2 \\ 
-3 & 4
-\end{pmatrix}
-\cdot
-\begin{pmatrix}
-5 & 6 \\ 
-7 & 8
-\end{pmatrix}
-=
-\begin{pmatrix}
-(1 \cdot 5 + 2 \cdot 7) & (1 \cdot 6 + 2 \cdot 8) \\ 
-(3 \cdot 5 + 4 \cdot 7) & (3 \cdot 6 + 4 \cdot 8)
-\end{pmatrix}
-=
-\begin{pmatrix}
-5 + 14 & 6 + 16 \\ 
-15 + 28 & 18 + 32
-\end{pmatrix}
-=
-\begin{pmatrix}
-19 & 22 \\ 
-43 & 50
-\end{pmatrix}
-$$
 
 #### 3.2 $\mathbf{B} \cdot \mathbf{A}$
 
@@ -435,44 +406,89 @@ $$
 
 **Determinants**
 
-For A
+# Determinants Using the Laplace Method
+
+---
+
+### **Exercise 1 (Determinant of \( A \))**
+
+Let $$ A = \begin{bmatrix} 2 & -3 & 1 \\ 4 & 0 & 2 \\ 1 & 1 & 3 \end{bmatrix} $$
+
+Using the **Laplace expansion along the first row**:
 
 $$
-\text{det}(A) = 2((4)(1) - (0)(2)) - 3((1)(1) - (0)(3)) + 1((1)(2) - (4)(3))
+\text{det}(A) = 2 \begin{vmatrix} 0 & 2 \\ 1 & 3 \end{vmatrix} 
+- (-3) \begin{vmatrix} 4 & 2 \\ 1 & 3 \end{vmatrix} 
++ 1 \begin{vmatrix} 4 & 0 \\ 1 & 1 \end{vmatrix}
+$$
+
+Now, compute each minor:
+
+$$
+\text{det}(A) = 2 \big[(0)(3) - (2)(1)\big] 
++ 3 \big[(4)(3) - (1)(2)\big] 
++ 1 \big[(4)(1) - (0)(1)\big]
 $$
 
 $$
-\text{det}(A) = 2(4 - 0) - 3(1 - 0) + 1(2 - 12)
+\text{det}(A) = 2(0 - 2) + 3(12 - 2) + 1(4 - 0)
 $$
 
 $$
-\text{det}(A) = 2(4) - 3(1) + 1(-10) = 8 - 3 - 10 = -5
+\text{det}(A) = 2(-2) + 3(10) + 4 = -4 + 30 + 4 = 30
 $$
 
-For B
+---
+
+### **Exercise 2 (Determinant of \( B \))**
+
+Let $$B = \begin{bmatrix} 2 & -3 & 1 \\ 4 & 0 & 2 \\ 0 & 0 & 1 \end{bmatrix}$$
+
+Using the **Laplace expansion along the first row**:
 
 $$
-\text{det}(B) = 2((4)(0) - (0)(2)) - 3((1)(0) - (0)(3)) + 1((1)(2) - (4)(3))
+\text{det}(B) = 2 \begin{vmatrix} 0 & 2 \\ 0 & 1 \end{vmatrix} 
+- (-3) \begin{vmatrix} 4 & 2 \\ 0 & 1 \end{vmatrix} 
++ 1 \begin{vmatrix} 4 & 0 \\ 0 & 0 \end{vmatrix}
+$$
+
+Now, compute each minor:
+
+$$
+\text{det}(B) = 2 \big[(0)(1) - (2)(0)\big] 
++ 3 \big[(4)(1) - (0)(2)\big] 
++ 1 \big[(4)(0) - (0)(0)\big]
 $$
 
 $$
-\text{det}(B) = 2(0 - 0) - 3(0 - 0) + 1(2 - 12)
+\text{det}(B) = 2(0 - 0) + 3(4 - 0) + 1(0 - 0)
 $$
 
 $$
-\text{det}(B) = 0 - 0 + 1(-10) = -10
+\text{det}(B) = 0 + 3(4) + 0 = 12
 $$
+
+---
 
 For C 
 
 $$
-\text{det}(C) = 2 \begin{vmatrix} 0 & 0 & 6 \\ 2 & 1 & 5 \\ 1 & 4 & 0 \end{vmatrix} - 3 \begin{vmatrix} 1 & 0 & 6 \\ 3 & 1 & 5 \\ 2 & 4 & 0 \end{vmatrix} + 1 \begin{vmatrix} 1 & 0 & 2 \\ 3 & 2 & 5 \\ 2 & 1 & 0 \end{vmatrix} - 4 \begin{vmatrix} 1 & 0 & 2 \\ 3 & 2 & 1 \\ 2 & 1 & 4 \end{vmatrix}
+\text{det}(C) = 2 \begin{vmatrix} 0 & 0 & 6 \\ 2 & 1 & 5 \\ 1 & 4 & 0 \end{vmatrix} 
+- 3 \begin{vmatrix} 1 & 0 & 6 \\ 3 & 1 & 5 \\ 2 & 4 & 0 \end{vmatrix} 
++ 1 \begin{vmatrix} 1 & 0 & 2 \\ 3 & 2 & 5 \\ 2 & 1 & 0 \end{vmatrix} 
+- 4 \begin{vmatrix} 1 & 0 & 2 \\ 3 & 2 & 1 \\ 2 & 1 & 4 \end{vmatrix}
 $$
 
-For D
+Substituting values:
 
 $$
-\text{det}(D) = 77
+\text{det}(C) = 2(42) - 3(40) + 1(-7) - 4(5)
+$$
+
+Simplify:
+
+$$
+\text{det}(C) = 84 - 120 - 7 - 20 = -63
 $$
 
 ## 4. Determinants from the Gauss Method and Triangular Matrices
@@ -671,6 +687,8 @@ $$
 $$
  
 #### Step 2: Find the inverse of matrix A
+
+![alt text](<Screenshot 2024-11-29 at 10.00.51 AM.png>)
  
 The inverse of a $3 \times 3$ matrix is given by:
  
@@ -1121,44 +1139,338 @@ $$
 
 ---
 
-### 2. Solve the system:
+### Task2
+
+We are given the system of equations:
 
 $$
-\begin{cases}
-2x + y - z = 1 \\
-x - y + 2z = 4 \\
-3x - 2z = -1
-\end{cases}
+\begin{aligned}
+2x + y - z &= 1, \\
+x - y + 2z &= 4, \\
+3x - 2z &= -1.
+\end{aligned}
 $$
 
-Matrix form:
+This system can be written in matrix form as:
 
 $$
-A = \begin{bmatrix} 2 & 1 & -1 \\ 1 & -1 & 2 \\ 3 & 0 & -2 \end{bmatrix}, \quad \mathbf{x} = \begin{bmatrix} x \\ y \\ z \end{bmatrix}, \quad \mathbf{b} = \begin{bmatrix} 1 \\ 4 \\ -1 \end{bmatrix}
+A = \begin{bmatrix} 
+2 & 1 & -1 \\
+1 & -1 & 2 \\
+3 & 0 & -2 
+\end{bmatrix}, 
+\quad 
+x = \begin{bmatrix} 
+x \\
+y \\
+z 
+\end{bmatrix},
+\quad 
+b = \begin{bmatrix} 
+1 \\
+4 \\
+-1 
+\end{bmatrix}.
 $$
 
-Apply Cramer's Rule as shown in the first example. Calculate the determinants for \( x \), \( y \), and \( z \).
+### Step 1: Find the Determinant of \( A \)
+
+We first compute the determinant of matrix \( A \) using cofactor expansion:
+
+$$
+\text{det}(A) = \begin{vmatrix} 
+2 & 1 & -1 \\
+1 & -1 & 2 \\
+3 & 0 & -2 
+\end{vmatrix}.
+$$
+
+Using the cofactor expansion along the first row:
+
+$$
+\text{det}(A) = 2 \begin{vmatrix} -1 & 2 \\ 0 & -2 \end{vmatrix} - 1 \begin{vmatrix} 1 & 2 \\ 3 & -2 \end{vmatrix} + (-1) \begin{vmatrix} 1 & -1 \\ 3 & 0 \end{vmatrix}.
+$$
+
+We compute the 2x2 determinants:
+
+$$
+\begin{vmatrix} -1 & 2 \\ 0 & -2 \end{vmatrix} = (-1)(-2) - (0)(2) = 2,
+$$
+
+$$
+\begin{vmatrix} 1 & 2 \\ 3 & -2 \end{vmatrix} = (1)(-2) - (3)(2) = -2 - 6 = -8,
+$$
+
+$$
+\begin{vmatrix} 1 & -1 \\ 3 & 0 \end{vmatrix} = (1)(0) - (3)(-1) = 3.
+$$
+
+Now, substitute these into the formula for the determinant:
+
+$$
+\text{det}(A) = 2(2) - 1(-8) + (-1)(3) = 4 + 8 - 3 = 9.
+$$
+
+So, the determinant of \( A \) is:
+
+$$
+\text{det}(A) = 9.
+$$
+
+### Step 2: Find \( x \), \( y \), and \( z \) Using Cramer's Rule
+
+To solve for \( x \), \( y \), and \( z \), we use Cramer's Rule. Cramer's Rule states that:
+
+$$
+x = \frac{\text{det}(A_x)}{\text{det}(A)}, \quad y = \frac{\text{det}(A_y)}{\text{det}(A)}, \quad z = \frac{\text{det}(A_z)}{\text{det}(A)},
+$$
+
+where \( A_x \), \( A_y \), and \( A_z \) are matrices obtained by replacing the corresponding column of matrix \( A \) with the vector \( b \).
+
+### Step 3: Find \( A_x \), \( A_y \), and \( A_z \)
+
+#### Matrix \( A_x \)
+
+Replace the first column of \( A \) with the vector \( b \):
+
+$$
+A_x = \begin{bmatrix}
+1 & 1 & -1 \\
+4 & -1 & 2 \\
+-1 & 0 & -2
+\end{bmatrix}.
+$$
+
+Now, compute the determinant of \( A_x \):
+
+$$
+\text{det}(A_x) = \begin{vmatrix} 
+1 & 1 & -1 \\
+4 & -1 & 2 \\
+-1 & 0 & -2 
+\end{vmatrix}.
+$$
+
+Using cofactor expansion along the first row:
+
+$$
+\text{det}(A_x) = 1 \begin{vmatrix} -1 & 2 \\ 0 & -2 \end{vmatrix} - 1 \begin{vmatrix} 4 & 2 \\ -1 & -2 \end{vmatrix} + (-1) \begin{vmatrix} 4 & -1 \\ -1 & 0 \end{vmatrix}.
+$$
+
+Compute the 2x2 determinants:
+
+$$
+\begin{vmatrix} -1 & 2 \\ 0 & -2 \end{vmatrix} = 2, 
+$$
+
+$$
+\begin{vmatrix} 4 & 2 \\ -1 & -2 \end{vmatrix} = (4)(-2) - (2)(-1) = -8 + 2 = -6,
+$$
+
+$$
+\begin{vmatrix} 4 & -1 \\ -1 & 0 \end{vmatrix} = (4)(0) - (-1)(-1) = -1.
+$$
+
+Now, substitute into the determinant formula:
+
+$$
+\text{det}(A_x) = 1(2) - 1(-6) + (-1)(-1) = 2 + 6 + 1 = 9.
+$$
+
+#### Matrix \( A_y \)
+
+Replace the second column of \( A \) with the vector \( b \):
+
+$$
+A_y = \begin{bmatrix}
+2 & 1 & -1 \\
+1 & 4 & 2 \\
+3 & -1 & -2
+\end{bmatrix}.
+$$
+
+Now, compute the determinant of \( A_y \):
+
+$$
+\text{det}(A_y) = \begin{vmatrix} 
+2 & 1 & -1 \\
+1 & 4 & 2 \\
+3 & -1 & -2 
+\end{vmatrix}.
+$$
+
+Using cofactor expansion along the first row:
+
+$$
+\text{det}(A_y) = 2 \begin{vmatrix} 4 & 2 \\ -1 & -2 \end{vmatrix} - 1 \begin{vmatrix} 1 & 2 \\ 3 & -2 \end{vmatrix} + (-1) \begin{vmatrix} 1 & 4 \\ 3 & -1 \end{vmatrix}.
+$$
+
+Compute the 2x2 determinants:
+
+$$
+\begin{vmatrix} 4 & 2 \\ -1 & -2 \end{vmatrix} = -6, 
+$$
+
+$$
+\begin{vmatrix} 1 & 2 \\ 3 & -2 \end{vmatrix} = -8,
+$$
+
+$$
+\begin{vmatrix} 1 & 4 \\ 3 & -1 \end{vmatrix} = -13.
+$$
+
+Now, substitute into the determinant formula:
+
+$$
+\text{det}(A_y) = 2(-6) - 1(-8) + (-1)(-13) = -12 + 8 + 13 = 9.
+$$
+
+#### Matrix \( A_z \)
+
+Replace the third column of \( A \) with the vector \( b \):
+
+$$
+A_z = \begin{bmatrix}
+2 & 1 & 1 \\
+1 & -1 & 4 \\
+3 & 0 & -1
+\end{bmatrix}.
+$$
+
+Now, compute the determinant of \( A_z \):
+
+$$
+\text{det}(A_z) = \begin{vmatrix} 
+2 & 1 & 1 \\
+1 & -1 & 4 \\
+3 & 0 & -1 
+\end{vmatrix}.
+$$
+
+Using cofactor expansion along the first row:
+
+$$
+\text{det}(A_z) = 2 \begin{vmatrix} -1 & 4 \\ 0 & -1 \end{vmatrix} - 1 \begin{vmatrix} 1 & 4 \\ 3 & -1 \end{vmatrix} + 1 \begin{vmatrix} 1 & -1 \\ 3 & 0 \end{vmatrix}.
+$$
+
+Compute the 2x2 determinants:
+
+$$
+\begin{vmatrix} -1 & 4 \\ 0 & -1 \end{vmatrix} = 1, 
+$$
+
+$$
+\begin{vmatrix} 1 & 4 \\ 3 & -1 \end{vmatrix} = -13,
+$$
+
+$$
+\begin{vmatrix} 1 & -1 \\ 3 & 0 \end{vmatrix} = 3.
+$$
+
+Now, substitute into the determinant formula:
+
+$$
+\text{det}(A_z) = 2(1) - 1(-13) + 1(3) = 2 + 13 + 3 = 18.
+$$
+
+### Step 4: Solve for \( x \), \( y \), and \( z \)
+
+Using Cramer's Rule, we can now find \( x \), \( y \), and \( z \):
+
+$$
+x = \frac{\text{det}(A_x)}{\text{det}(A)} = \frac{9}{9} = 1,
+$$
+
+$$
+y = \frac{\text{det}(A_y)}{\text{det}(A)} = \frac{9}{9} = 1,
+$$
+
+$$
+z = \frac{\text{det}(A_z)}{\text{det}(A)} = \frac{18}{9} = 2.
+$$
+
+### Final Solution:
+
+Thus, the solution to the system of equations is:
+
+$$
+x = 1, \quad y = 1, \quad z = 2.
+$$
+
 
 ---
 
 ### 3. Solve the system:
 
-$$
-\begin{cases}
-x + y + z - t = 2 \\
-x - z + 2t = 6 \\
-2x - 3y + t = 4 \\
-3x + y + 3z - 4t = -2
-\end{cases}
-$$
-
-Matrix form:
+The system of equations is given by:
 
 $$
-A = \begin{bmatrix} 1 & 1 & 1 & -1 \\ 1 & 0 & -1 & 2 \\ 2 & -3 & 0 & 1 \\ 3 & 1 & 3 & -4 \end{bmatrix}, \quad \mathbf{x} = \begin{bmatrix} x \\ y \\ z \\ t \end{bmatrix}, \quad \mathbf{b} = \begin{bmatrix} 2 \\ 6 \\ 4 \\ -2 \end{bmatrix}
+\begin{aligned}
+x + y + z - t &= 2 \\
+x - z + 2t &= 6 \\
+2x - 3y + t &= 4 \\
+3x + y + 3z - 4t &= -2
+\end{aligned}
 $$
 
-Apply Cramer's Rule by finding the determinants for each variable.
+We can represent the system in matrix form as:
+
+$$
+A \cdot x = b
+$$
+
+Where:
+
+$$
+A = \begin{bmatrix}
+1 & 1 & 1 & -1 \\
+1 & 0 & -1 & 2 \\
+2 & -3 & 0 & 1 \\
+3 & 1 & 3 & -4
+\end{bmatrix}, \quad
+x = \begin{bmatrix}
+x \\
+y \\
+z \\
+t
+\end{bmatrix}, \quad
+b = \begin{bmatrix}
+2 \\
+6 \\
+4 \\
+-2
+\end{bmatrix}
+$$
+
+The solution is found by computing:
+
+$$
+x = A^{-1} \cdot b
+$$
+
+The inverse of \(A\) exists and is calculated as:
+
+$$
+A^{-1} = \text{[inverse of A]}
+$$
+
+Multiplying \(A^{-1}\) with \(b\), we obtain the solution:
+
+$$
+x = \begin{bmatrix}
+0.5 \\
+1 \\
+6.5 \\
+6
+\end{bmatrix}
+$$
+
+Thus, the values of \(x\), \(y\), \(z\), and \(t\) are:
+
+$$
+x = 0.5, \quad y = 1, \quad z = 6.5, \quad t = 6
+$$
+
 
 ---
 
