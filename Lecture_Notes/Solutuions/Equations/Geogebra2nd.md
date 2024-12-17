@@ -538,7 +538,7 @@ $\lim_{x \to \infty} \frac{x^3 + 2x^2}{x^4 - 3x^3} = 0$
    
    - $\displaystyle \lim_{x \to 0} \frac{\sin(3x)}{2x+1}$.
 ## Solution
-
+![alt text](image-24.png)
 ### Given
 $\lim_{x \to 0} \frac{\sin(3x)}{2x+1}$
 
@@ -553,3 +553,67 @@ $\frac{\sin(3x)}{2x+1} = \frac{0}{1} = 0$
 
 ### Final Answer
 $\lim_{x \to 0} \frac{\sin(3x)}{2x+1} = 0$
+
+### 4. Find the asymptotes of the function:
+  
+   - $f(x) = \frac{x^2 - 1}{x^2 + 1}$
+   - $g(x) = \frac{\sin(x)}{x^2+1}$
+## Solution
+
+### Problem: Find the asymptotes of the functions:
+- $f(x) = \frac{x^2 - 1}{x^2 + 1}$
+- $g(x) = \frac{\sin(x)}{x^2 + 1}$
+
+---
+
+### 1. Asymptotes for $f(x) = \frac{x^2 - 1}{x^2 + 1}$
+
+#### Horizontal Asymptotes:
+- Compute $\lim_{x \to \infty} f(x)$:
+  $$
+  f(x) = \frac{x^2 - 1}{x^2 + 1} = \frac{x^2(1 - \frac{1}{x^2})}{x^2(1 + \frac{1}{x^2})} = \frac{1 - \frac{1}{x^2}}{1 + \frac{1}{x^2}}
+  $$
+  As $x \to \infty$, $\frac{1}{x^2} \to 0$, so:
+  $$
+  \lim_{x \to \infty} f(x) = \frac{1}{1} = 1
+  $$
+
+  Similarly, $\lim_{x \to -\infty} f(x) = 1$.
+
+- **Horizontal Asymptote**: $y = 1$
+
+#### Vertical Asymptotes:
+- Check for division by zero in the denominator, $x^2 + 1 = 0$.
+- No real solutions exist for $x^2 + 1 = 0$, so there are **no vertical asymptotes**.
+
+---
+
+### 2. Asymptotes for $g(x) = \frac{\sin(x)}{x^2 + 1}$
+
+#### Horizontal Asymptotes:
+- Compute $\lim_{x \to \infty} g(x)$:
+  $$
+  g(x) = \frac{\sin(x)}{x^2 + 1}
+  $$
+  The numerator, $\sin(x)$, oscillates between $-1$ and $1$, while the denominator $x^2 + 1 \to \infty$ as $x \to \infty$. Hence:
+  $$
+  \lim_{x \to \infty} g(x) = 0
+  $$
+  Similarly, $\lim_{x \to -\infty} g(x) = 0$.
+
+- **Horizontal Asymptote**: $y = 0$
+
+#### Vertical Asymptotes:
+- Check for division by zero in the denominator, $x^2 + 1 = 0$.
+- No real solutions exist for $x^2 + 1 = 0$, so there are **no vertical asymptotes**.
+
+---
+
+### Final Results:
+1. For $f(x) = \frac{x^2 - 1}{x^2 + 1}$:
+   - Horizontal Asymptote: $y = 1$
+   - No vertical asymptotes.
+
+2. For $g(x) = \frac{\sin(x)}{x^2 + 1}$:
+   - Horizontal Asymptote: $y = 0$
+   - No vertical asymptotes.
