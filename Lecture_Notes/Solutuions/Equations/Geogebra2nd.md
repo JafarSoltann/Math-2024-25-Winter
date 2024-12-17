@@ -499,6 +499,4 @@ $$
 
 ### Conclusion:
 By the squeeze theorem, we have shown that:
-$$
-\lim_{n \to \infty} \frac{\sin(n)}{n} = 0
-$$
+$lim_{n \to \infty} \frac{\sin(n)}{n} = 0$
