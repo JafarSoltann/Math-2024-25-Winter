@@ -471,26 +471,34 @@ $$
 ### 2. Prove using the squeeze theorem:
    - $\displaystyle\lim_{n \to \infty} \frac{\sin(n)}{n}$
 ## Solution
-### Problem
-Prove using the squeeze theorem:
-$ 
-\lim_{n \to \infty} \frac{\sin(n)}{n} 
-$
+### Step-by-Step Solution:
 
-### Solution
-
-1. **Bound the function:**
-   $ -1 \leq \sin(n) \leq 1 $
+1. **Find the Bounds for \( \sin(n) \):**
+   We know that for all \( n \), \( \sin(n) \) is bounded by:
+   $$
+   -1 \leq \sin(n) \leq 1
+   $$
 
 2. **Divide by \( n \):**
-   $ -\frac{1}{n} \leq \frac{\sin(n)}{n} \leq \frac{1}{n} $
+   Now, divide the inequality by \( n \) (since \( n > 0 \), this is valid):
+   $$
+   \frac{-1}{n} \leq \frac{\sin(n)}{n} \leq \frac{1}{n}
+   $$
 
-3. **Apply the squeeze theorem:**
-   - As \( n \to \infty \), both bounds tend to 0:
-     $ \lim_{n \to \infty} -\frac{1}{n} = 0 $, $ \lim_{n \to \infty} \frac{1}{n} = 0 $
+3. **Take the Limit of the Bounds:**
+   As \( n \to \infty \), both \( \frac{-1}{n} \) and \( \frac{1}{n} \) approach 0:
+   $$
+   \lim_{n \to \infty} \frac{-1}{n} = 0 \quad \text{and} \quad \lim_{n \to \infty} \frac{1}{n} = 0
+   $$
 
-   By the squeeze theorem:
-   $ \lim_{n \to \infty} \frac{\sin(n)}{n} = 0 $
+4. **Apply the Squeeze Theorem:**
+   Since \( \frac{\sin(n)}{n} \) is squeezed between \( \frac{-1}{n} \) and \( \frac{1}{n} \), and both of these bounds approach 0 as \( n \to \infty \), by the squeeze theorem, we conclude that:
+   $$
+   \lim_{n \to \infty} \frac{\sin(n)}{n} = 0
+   $$
 
-### Conclusion
-$ \lim_{n \to \infty} \frac{\sin(n)}{n} = 0 $
+### Conclusion:
+By the squeeze theorem, we have shown that:
+$$
+\lim_{n \to \infty} \frac{\sin(n)}{n} = 0
+$$
