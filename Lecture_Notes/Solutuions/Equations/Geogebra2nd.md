@@ -13,9 +13,9 @@ To find the equation of the plane passing through the points $A(1, 2, 3)$, $B(3,
 
 3. The equation of the plane is:
    $$ 4(x - 1) + 0(y - 2) - 4(z - 3) = 0 $$
+
    Simplifying:
    $$ x - z = -2 $$
 
 Thus, the equation of the plane is:
 $$ x - z = -2 $$
-
