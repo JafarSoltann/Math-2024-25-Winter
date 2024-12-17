@@ -19,3 +19,5 @@ To find the equation of the plane passing through the points A(1, 2, 3), B(3, 4,
 
 Thus, the equation of the plane is:
 x - z = -2
+
+* The plane passes through point $A(1, 2, 3)$ and is parallel to the plane $2x + 3y + 4z = 5$. Find the equation of the plane.
