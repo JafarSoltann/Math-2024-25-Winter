@@ -492,7 +492,7 @@ $$
    $$
 
 4. **Apply the Squeeze Theorem:**
-   Since $$ \frac{\sin(n)}{n} $$ is squeezed between $ \frac{-1}{n} $ and $ \frac{1}{n} $, and both of these bounds approach 0 as $ n \to \infty $, by the squeeze theorem, we conclude that:
+   Since $\frac{\sin(n)}{n}$ is squeezed between $\frac{-1}{n}$ and $\frac{1}{n}$, and both of these bounds approach 0 as $n \to \infty$, by the squeeze theorem, we conclude that:
    $lim_{n \to \infty} \frac{\sin(n)}{n} = 0$
 
 ### Conclusion:
