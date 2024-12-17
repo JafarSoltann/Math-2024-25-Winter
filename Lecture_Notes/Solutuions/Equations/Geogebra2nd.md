@@ -280,3 +280,34 @@ $$\left(\frac{1}{2}\right)^2 + y^2 + z^2 = 1 \Rightarrow \frac{1}{4} + y^2 + z^2
 ### Conclusion
 The intersection curve is a circle in the plane $x = \frac{1}{2}$ with equation:
 $$y^2 + z^2 = \frac{3}{4}$$
+
+* Write the equation of the tangent plane to the paraboloid $z=(x-1)^2+y^2+1$ at point $P(1,0,1)$.
+![alt text](image-14.png)
+
+### Given
+- Paraboloid: $z = (x - 1)^2 + y^2 + 1$
+- Point: $P(1, 0, 1)$
+
+### Step 1: Find the Partial Derivatives
+- $f_x(x, y) = 2(x - 1)$
+- $f_y(x, y) = 2y$
+
+### Step 2: Evaluate the Partial Derivatives at $P(1, 0)$
+- $f_x(1, 0) = 0$
+- $f_y(1, 0) = 0$
+
+### Step 3: Equation of the Tangent Plane
+The tangent plane equation is:
+$$
+z - 1 = 0(x - 1) + 0(y - 0)
+$$
+Simplifying:
+$$
+z = 1
+$$
+
+### Conclusion
+The equation of the tangent plane at $P(1, 0, 1)$ is:
+$$
+z = 1
+$$
