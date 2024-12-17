@@ -473,24 +473,24 @@ $$
 ## Solution
 ### Problem
 Prove using the squeeze theorem:
-$$
-\lim_{n \to \infty} \frac{\sin(n)}{n}
-$$
+$ 
+\lim_{n \to \infty} \frac{\sin(n)}{n} 
+$
 
 ### Solution
 
 1. **Bound the function:**
-   $$ -1 \leq \sin(n) \leq 1 $$
+   $ -1 \leq \sin(n) \leq 1 $
 
 2. **Divide by \( n \):**
-   $$ -\frac{1}{n} \leq \frac{\sin(n)}{n} \leq \frac{1}{n} $$
+   $ -\frac{1}{n} \leq \frac{\sin(n)}{n} \leq \frac{1}{n} $
 
 3. **Apply the squeeze theorem:**
    - As \( n \to \infty \), both bounds tend to 0:
-     $$ \lim_{n \to \infty} -\frac{1}{n} = 0, \quad \lim_{n \to \infty} \frac{1}{n} = 0 $$
+     $ \lim_{n \to \infty} -\frac{1}{n} = 0 $, $ \lim_{n \to \infty} \frac{1}{n} = 0 $
 
    By the squeeze theorem:
-   $$ \lim_{n \to \infty} \frac{\sin(n)}{n} = 0 $$
+   $ \lim_{n \to \infty} \frac{\sin(n)}{n} = 0 $
 
 ### Conclusion
-$$ \lim_{n \to \infty} \frac{\sin(n)}{n} = 0 $$
+$ \lim_{n \to \infty} \frac{\sin(n)}{n} = 0 $
