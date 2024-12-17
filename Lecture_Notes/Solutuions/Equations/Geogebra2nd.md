@@ -397,3 +397,18 @@ The compositions of these two functions result in the identity function $x$, mea
 
 ### Conclusion
 - The function $f$ does not have an inverse because it is not one-to-one.
+
+### 6. We have function $f(x)= x-1$. Give inverse function $f^{-1}$. Show both functions on the same Geogebra notebook.
+![alt text](image-19.png)
+
+### Given Function
+- $f(x) = x - 1$
+
+### Inverse Function
+- To find the inverse, solve for $x$ in terms of $y$:
+  - $y = x - 1$
+  - $x = y + 1$
+  - So, the inverse function is $f^{-1}(x) = x + 1$.
+
+### Conclusion
+- The inverse function of $f(x) = x - 1$ is $f^{-1}(x) = x + 1$.
