@@ -421,6 +421,7 @@ The compositions of these two functions result in the identity function $x$, mea
    - $\displaystyle \lim_{n \to \infty} \frac{(2n+3)^3}{n^3-1}$
 
 ## solution
+![alt text](image-20.png)
 ### 1. Calculate:
 
 #### a) $\displaystyle \lim_{n \to \infty} \frac{n^2 + 3n}{2n^2 - 2n}$
@@ -466,3 +467,28 @@ $$
 ### Final Answers:
 - $\displaystyle \lim_{n \to \infty} \frac{n^2 + 3n}{2n^2 - 2n} = \frac{1}{2}$
 - $\displaystyle \lim_{n \to \infty} \frac{(2n+3)^3}{n^3 - 1} = 8$
+
+### 2. Prove using the squeeze theorem:
+   - $\displaystyle\lim_{n \to \infty} \frac{\sin(n)}{n}$
+## Solution
+### 2. Prove using the Squeeze Theorem:
+$$ \lim_{n \to \infty} \frac{\sin(n)}{n} $$
+
+#### Step 1: Analyze the Behavior of \( \sin(n) \)
+We know that for all real values of \( n \), the sine function satisfies the inequality:
+$$ -1 \leq \sin(n) \leq 1 $$
+
+#### Step 2: Divide by \( n \)
+Now, divide the inequality by \( n \) (for \( n > 0 \)):
+$$ \frac{-1}{n} \leq \frac{\sin(n)}{n} \leq \frac{1}{n} $$
+
+#### Step 3: Take the Limit as \( n \to \infty \)
+As \( n \to \infty \), both \( \frac{-1}{n} \) and \( \frac{1}{n} \) approach 0:
+$$ \lim_{n \to \infty} \frac{-1}{n} = 0 \quad \text{and} \quad \lim_{n \to \infty} \frac{1}{n} = 0 $$
+
+Thus, by the **Squeeze Theorem**, we can conclude:
+$$ \lim_{n \to \infty} \frac{\sin(n)}{n} = 0 $$
+
+### Final Answer:
+$$ \lim_{n \to \infty} \frac{\sin(n)}{n} = 0 $$
+
