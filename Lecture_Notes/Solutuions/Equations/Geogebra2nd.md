@@ -171,3 +171,18 @@ $$
 The distance from point $A(1, 2, 3)$ to the plane $2x + 3y + 4z = 5$ is approximately:  
 
 **2.79**
+
+* The plane intersects the coordinate axes at points $A(2, 0, 0)$, $B(0, 3, 0)$, and $C(0, 0, 4)$. Find the equation of the plane.
+![alt text](image-7.png)
+
+### Given Points
+- $A(2, 0, 0)$
+- $B(0, 3, 0)$
+- $C(0, 0, 4)$
+
+### Equation of the Plane
+The equation of the plane is:
+
+$$
+6x + 4y + 3z = 12
+$$
