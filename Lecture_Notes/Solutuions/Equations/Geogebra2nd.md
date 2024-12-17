@@ -412,3 +412,69 @@ The compositions of these two functions result in the identity function $x$, mea
 
 ### Conclusion
 - The inverse function of $f(x) = x - 1$ is $f^{-1}(x) = x + 1$.
+
+## 19. Limits of Sequences
+
+### 1. Calculate:
+   - $\displaystyle \lim_{n \to \infty} \frac{n^2 + 3n}{2 n^2 - 2n}$
+
+   - $\displaystyle \lim_{n \to \infty} \frac{(2n+3)^3}{n^3-1}$
+
+## solution
+### 1. Calculate:
+
+#### a. $ \lim_{n \to \infty} \frac{n^2 + 3n}{2 n^2 - 2n} $
+
+To solve this limit, divide both the numerator and the denominator by $n^2$ (the highest power of $n$ in the expression):
+
+$$
+\lim_{n \to \infty} \frac{n^2 + 3n}{2n^2 - 2n} = \lim_{n \to \infty} \frac{\frac{n^2}{n^2} + \frac{3n}{n^2}}{\frac{2n^2}{n^2} - \frac{2n}{n^2}} = \lim_{n \to \infty} \frac{1 + \frac{3}{n}}{2 - \frac{2}{n}}.
+$$
+
+As $n \to \infty$, both $ \frac{3}{n} $ and $ \frac{2}{n} $ approach zero:
+
+$$
+\lim_{n \to \infty} \frac{1 + \frac{3}{n}}{2 - \frac{2}{n}} = \frac{1 + 0}{2 - 0} = \frac{1}{2}.
+$$
+
+Thus, the result is:
+
+$$
+\boxed{\frac{1}{2}}.
+$$
+
+#### b. $ \lim_{n \to \infty} \frac{(2n+3)^3}{n^3 - 1} $
+
+First, expand the cubic term in the numerator:
+
+$$
+(2n + 3)^3 = 8n^3 + 12n^2 + 18n + 27.
+$$
+
+So the expression becomes:
+
+$$
+\lim_{n \to \infty} \frac{8n^3 + 12n^2 + 18n + 27}{n^3 - 1}.
+$$
+
+Now, divide both the numerator and the denominator by $n^3$:
+
+$$
+\lim_{n \to \infty} \frac{\frac{8n^3}{n^3} + \frac{12n^2}{n^3} + \frac{18n}{n^3} + \frac{27}{n^3}}{\frac{n^3}{n^3} - \frac{1}{n^3}} = \lim_{n \to \infty} \frac{8 + \frac{12}{n} + \frac{18}{n^2} + \frac{27}{n^3}}{1 - \frac{1}{n^3}}.
+$$
+
+As $n \to \infty$, all terms involving $n$ in the denominator approach zero:
+
+$$
+\lim_{n \to \infty} \frac{8 + 0 + 0 + 0}{1 - 0} = \frac{8}{1} = 8.
+$$
+
+Thus, the result is:
+
+$$
+\boxed{8}.
+$$
+
+### Final Answers:
+- $ \lim_{n \to \infty} \frac{n^2 + 3n}{2 n^2 - 2n} = \frac{1}{2} $
+- $ \lim_{n \to \infty} \frac{(2n+3)^3}{n^3 - 1} = 8 $
