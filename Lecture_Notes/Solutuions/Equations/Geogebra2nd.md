@@ -479,17 +479,13 @@ $$
    -1 \leq \sin(n) \leq 1
    $$
 
-2. **Divide by \( n \):**
-   Now, divide the inequality by \( n \) (since \( n > 0 \), this is valid):
-   $$
-   \frac{-1}{n} \leq \frac{\sin(n)}{n} \leq \frac{1}{n}
-   $$
+2. **Divide by n :**
+   Now, divide the inequality by $n$ (since $n > 0$, this is valid):
+   $\frac{-1}{n} \leq \frac{\sin(n)}{n} \leq \frac{1}{n}$
 
 3. **Take the Limit of the Bounds:**
-   As \( n \to \infty \), both \( \frac{-1}{n} \) and \( \frac{1}{n} \) approach 0:
-   $$
-   \lim_{n \to \infty} \frac{-1}{n} = 0 \quad \text{and} \quad \lim_{n \to \infty} \frac{1}{n} = 0
-   $$
+   As $n \to \infty$, both $\frac{-1}{n}$ and $\frac{1}{n}$ approach 0:
+   $\lim_{n \to \infty} \frac{-1}{n} = 0 \quad \text{and} \quad \lim_{n \to \infty} \frac{1}{n} = 0$
 
 4. **Apply the Squeeze Theorem:**
    Since $\frac{\sin(n)}{n}$ is squeezed between $\frac{-1}{n}$ and $\frac{1}{n}$, and both of these bounds approach 0 as $n \to \infty$, by the squeeze theorem, we conclude that:
