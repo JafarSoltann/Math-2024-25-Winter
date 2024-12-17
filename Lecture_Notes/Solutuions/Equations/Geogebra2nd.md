@@ -370,3 +370,16 @@ Both $f(g(x))$ and $g(f(x))$ simplify to $x$. This is because $e^x$ and $\ln(x)$
 
 ### Observation
 The compositions of these two functions result in the identity function $x$, meaning that applying one function after the other undoes the effect of the first. This demonstrates that the exponential and natural logarithm functions are inverses of each other.
+
+### 4. We have function $f=\{(1,7), (2,9), (3,11)\}$. Give inverse function $f^{-1}$.
+![alt text](image-18.png)
+
+### Given Function
+- $f = \{(1,7), (2,9), (3,11)\}$
+
+### Inverse Function
+- To find the inverse, we swap the coordinates of each pair:
+  - $f^{-1} = \{(7,1), (9,2), (11,3)\}$
+
+### Conclusion
+- The inverse function is $f^{-1} = \{(7,1), (9,2), (11,3)\}$.
