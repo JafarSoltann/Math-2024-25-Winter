@@ -115,3 +115,28 @@ where t is the parameter.
 
 Thus, the equation of the plane is:
 x - y - z = -4
+
+* We have the plane $2x + 3y + 4z = 5$. Find an example of a plane parallel and perpendicular to it.
+![alt text](image-5.png)
+
+### Given Plane
+The equation of the given plane is:  
+**2x + 3y + 4z = 5**
+
+The normal vector of this plane is **(2, 3, 4)**.
+
+### Parallel Plane
+A plane parallel to the given plane will have the same normal vector. For example, for **d = 10**:
+
+**2x + 3y + 4z = 10**
+
+### Perpendicular Plane
+To find a perpendicular plane, its normal vector must be perpendicular to **(2, 3, 4)**.  
+By solving **2a + 3b + 4c = 0**, we get **a = 1, b = -1, c = 0**, resulting in the equation:
+
+**x - y = 3**
+
+### Summary
+- **Parallel Plane**: 2x + 3y + 4z = 10  
+- **Perpendicular Plane**: x - y = 3
+
