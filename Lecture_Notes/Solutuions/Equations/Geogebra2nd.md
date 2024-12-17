@@ -215,3 +215,16 @@ Thus, the angle $\theta$ is:
 $$
 \theta = \cos^{-1}\left(\frac{1}{\sqrt{3}}\right) \approx 54.74^\circ
 $$
+
+* Find the vector perpendicular to the plane $x + y + z = 1$.
+![alt text](image-9.png)
+
+### Given Plane
+- Plane equation: $x + y + z = 1$
+
+### Normal Vector
+The normal vector to the plane is given by the coefficients of $x$, $y$, and $z$ in the equation. Therefore, the normal vector is:
+
+$$
+\mathbf{n} = (1, 1, 1)
+$$
