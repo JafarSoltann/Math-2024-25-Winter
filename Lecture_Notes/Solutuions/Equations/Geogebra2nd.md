@@ -496,7 +496,8 @@ $lim_{n \to \infty} \frac{\sin(n)}{n} = 0$
 
 ### 4. Find the limit of the sequence:
    - $a_n = (1+\frac{1}{n})^n$
-## Solution   
+## Solution
+![alt text](image-22.png)   
 ### Given Sequence
 The sequence is:
 $a_n = \left( 1 + \frac{1}{n} \right)^n$
@@ -511,3 +512,23 @@ $\lim_{n \to \infty} \left( 1 + \frac{1}{n} \right)^n = e$
 ### Conclusion
 The limit of the sequence is:
 $e \approx 2.718$ 
+
+
+## 20. Limits of Real Functions
+
+1. Compute:
+   - $\displaystyle\lim_{x \to \infty} \frac{x^3 + 2x^2}{x^4 - 3x^3}$
+## Solution
+### Given
+$\lim_{x \to \infty} \frac{x^3 + 2x^2}{x^4 - 3x^3}$
+
+### Step 1: Divide both numerator and denominator by $x^4$
+$\frac{x^3 + 2x^2}{x^4 - 3x^3} = \frac{\frac{x^3}{x^4} + \frac{2x^2}{x^4}}{\frac{x^4}{x^4} - \frac{3x^3}{x^4}} = \frac{\frac{1}{x} + \frac{2}{x^2}}{1 - \frac{3}{x}}$
+
+### Step 2: Take the limit as $x \to \infty$
+As $x \to \infty$, the terms $\frac{1}{x}$, $\frac{2}{x^2}$, and $\frac{3}{x}$ approach 0. Therefore, the expression simplifies to:
+
+$\frac{0 + 0}{1 - 0} = 0$
+
+### Final Answer
+$\lim_{x \to \infty} \frac{x^3 + 2x^2}{x^4 - 3x^3} = 0$
