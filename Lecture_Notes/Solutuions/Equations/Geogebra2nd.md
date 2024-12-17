@@ -186,3 +186,32 @@ The equation of the plane is:
 $$
 6x + 4y + 3z = 12
 $$
+
+* Calculate the angle between the plane $x + y + z = 1$ and the plane $x = 0$ (i.e., the $yz$ plane).
+![alt text](image-8.png)
+
+### Given Planes
+- Plane 1: $x + y + z = 1$
+- Plane 2: $x = 0$ (the $yz$-plane)
+
+### Normal Vectors
+- Normal vector of Plane 1: $\mathbf{n_1} = (1, 1, 1)$
+- Normal vector of Plane 2: $\mathbf{n_2} = (1, 0, 0)$
+
+### Dot Product and Magnitudes
+- Dot product: $\mathbf{n_1} \cdot \mathbf{n_2} = 1$
+- Magnitude of $\mathbf{n_1}$: $|\mathbf{n_1}| = \sqrt{3}$
+- Magnitude of $\mathbf{n_2}$: $|\mathbf{n_2}| = 1$
+
+### Angle Calculation
+Using the formula:
+
+$$
+\cos(\theta) = \frac{|\mathbf{n_1} \cdot \mathbf{n_2}|}{|\mathbf{n_1}| |\mathbf{n_2}|} = \frac{1}{\sqrt{3}}
+$$
+
+Thus, the angle $\theta$ is:
+
+$$
+\theta = \cos^{-1}\left(\frac{1}{\sqrt{3}}\right) \approx 54.74^\circ
+$$
