@@ -228,3 +228,19 @@ The normal vector to the plane is given by the coefficients of $x$, $y$, and $z$
 $$
 \mathbf{n} = (1, 1, 1)
 $$
+
+## 17. Equations of second-order surfaces
+
+* Write the equation of a sphere with center at point $P=(1,2,3)$ and radius $r=3$.
+![alt text](image-10.png)
+
+### Given
+- Center: $P = (1, 2, 3)$
+- Radius: $r = 3$
+
+### Equation of the Sphere
+Substitute into the formula:
+
+$$
+(x - 1)^2 + (y - 2)^2 + (z - 3)^2 = 9
+$$
