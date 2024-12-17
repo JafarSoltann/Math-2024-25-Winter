@@ -38,3 +38,22 @@ To find the equation of the plane passing through point A(1, 2, 3) and parallel 
 
 Thus, the equation of the plane is:
 2x + 3y + 4z = 20
+
+* The plane passes through point $A(1, 2, 3)$ and is perpendicular to the normal vector $\mathbf{n} = [2, 3, 4]$. Find the equation of the plane.
+![alt text](image-2.png)
+
+To find the equation of the plane passing through point A(1, 2, 3) and perpendicular to the normal vector n = [2, 3, 4]:
+
+1. The equation of the plane is given by:
+   n₁(x - x₁) + n₂(y - y₁) + n₃(z - z₁) = 0
+
+2. Using point A(1, 2, 3) and the normal vector n = [2, 3, 4], the equation becomes:
+   2(x - 1) + 3(y - 2) + 4(z - 3) = 0
+
+3. Simplifying:
+   2x - 2 + 3y - 6 + 4z - 12 = 0
+
+   2x + 3y + 4z = 20
+
+Thus, the equation of the plane is:
+2x + 3y + 4z = 20
