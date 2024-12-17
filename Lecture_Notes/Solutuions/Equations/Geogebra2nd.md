@@ -91,3 +91,27 @@ Plane 2: 3x + 4y + 2z = 6
 Thus, the line of intersection is:  
 `(x, y, z) = (1 - 4t, 1 + 6t, -2t)`  
 where t is the parameter.
+
+* Write the equation of the plane passing through point $A(1, 2, 3)$ and parallel to vectors $\vec{v_1} = [1, 0, 1]$ and $\vec{v_2} = [0, 1, -1]$.
+![alt text](image-4.png)
+
+### Equation of the Plane Passing Through Point A(1, 2, 3) and Parallel to Vectors v1 = [1, 0, 1] and v2 = [0, 1, -1]:
+
+1. **Define Point A and Vectors**:
+   - Point A(1, 2, 3)
+   - Vector v1 = (1, 0, 1)
+   - Vector v2 = (0, 1, -1)
+
+2. **Calculate the Normal Vector**:
+   The normal vector n is given by the cross product v1 × v2:
+   n = v1 × v2 = (-1, 1, 1)
+
+3. **Equation of the Plane**:
+   Using the point A(1, 2, 3) and the normal vector n = (-1, 1, 1), the equation of the plane is:
+   -1(x - 1) + 1(y - 2) + 1(z - 3) = 0
+
+4. **Simplifying**:
+   x - y - z = -4
+
+Thus, the equation of the plane is:
+x - y - z = -4
