@@ -244,3 +244,17 @@ Substitute into the formula:
 $$
 (x - 1)^2 + (y - 2)^2 + (z - 3)^2 = 9
 $$
+
+* Do the spheres with equations $x^2 + y^2 + z^2 = 1$ and $x^2 + y^2 + z^2 = 2$ have any common points?
+![alt text](image-11.png)
+
+### Given
+- Sphere 1: $x^2 + y^2 + z^2 = 1$ (center: $(0, 0, 0)$, radius: $1$)
+- Sphere 2: $x^2 + y^2 + z^2 = 2$ (center: $(0, 0, 0)$, radius: $\sqrt{2}$)
+
+### Analysis
+- Both spheres are concentric (same center at $(0, 0, 0)$).
+- The radius of Sphere 1 is smaller than that of Sphere 2 ($1 < \sqrt{2}$).
+
+### Conclusion
+Since one sphere is entirely inside the other, **there are no common points**.
