@@ -473,11 +473,9 @@ $$
 ## Solution
 ### Step-by-Step Solution:
 
-1. **Find the Bounds for \( \sin(n) \):**
-   We know that for all \( n \), \( \sin(n) \) is bounded by:
-   $$
-   -1 \leq \sin(n) \leq 1
-   $$
+1. **Find the Bounds for $\sin(n)$:**
+   We know that for all $n$, $\sin(n)$ is bounded by:
+   $-1 \leq \sin(n) \leq 1$
 
 2. **Divide by n :**
    Now, divide the inequality by $n$ (since $n > 0$, this is valid):
