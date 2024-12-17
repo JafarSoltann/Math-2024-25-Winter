@@ -140,3 +140,34 @@ By solving **2a + 3b + 4c = 0**, we get **a = 1, b = -1, c = 0**, resulting in t
 - **Parallel Plane**: 2x + 3y + 4z = 10  
 - **Perpendicular Plane**: x - y = 3
 
+* We have the plane $2x + 3y + 4z = 5$ and point $A(1, 2, 3)$. Find the distance from point $A$ to this plane.
+![alt text](image-6.png)
+
+### Given Plane
+The equation of the given plane is:  
+**$2x + 3y + 4z = 5$**
+
+The point is $A(1, 2, 3)$.
+
+### Distance Formula
+The distance from a point $(x_1, y_1, z_1)$ to a plane $ax + by + cz = d$ is given by:  
+
+$$
+d = \frac{|ax_1 + by_1 + cz_1 - d|}{\sqrt{a^2 + b^2 + c^2}}
+$$
+
+### Calculation
+Substitute the values into the formula:
+- $a = 2, b = 3, c = 4, d = 5$
+- Point $A(1, 2, 3)$ gives $x_1 = 1, y_1 = 2, z_1 = 3$
+
+Thus, the distance is:
+
+$$
+d = \frac{|2(1) + 3(2) + 4(3) - 5|}{\sqrt{2^2 + 3^2 + 4^2}} = \frac{|15|}{\sqrt{29}} = \frac{15}{\sqrt{29}} \approx 2.79
+$$
+
+### Final Answer
+The distance from point $A(1, 2, 3)$ to the plane $2x + 3y + 4z = 5$ is approximately:  
+
+**2.79**
