@@ -57,3 +57,37 @@ To find the equation of the plane passing through point A(1, 2, 3) and perpendic
 
 Thus, the equation of the plane is:
 2x + 3y + 4z = 20
+
+* We have two planes $2x + 3y + 4z = 5$ and $3x + 4y + 2z = 6$. Find the line of intersection of these planes.
+![alt text](image-3.png)
+
+We have two planes:  
+Plane 1: 2x + 3y + 4z = 5  
+Plane 2: 3x + 4y + 2z = 6  
+
+1. Find the direction of the line by computing the cross product of the normal vectors of the planes:  
+   Normal vector of Plane 1: (2, 3, 4)  
+   Normal vector of Plane 2: (3, 4, 2)
+
+   Cross product:  
+   $$ \mathbf{n_1} \times \mathbf{n_2} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ 2 & 3 & 4 \\ 3 & 4 & 2 \end{vmatrix} = (-4, 6, -2) $$
+
+   So, the direction vector of the line is (-4, 6, -2).
+
+2. Find a point on the line by solving the system of equations:  
+   Plane 1: 2x + 3y + 4z = 5  
+   Plane 2: 3x + 4y + 2z = 6  
+
+   Solving for x, y, and z (for example, by setting z = 0):  
+   x = 1, y = 1, z = 0.  
+   
+   Thus, the point on the line is (1, 1, 0).
+
+3. The parametric equations of the line are:  
+   $$ x = 1 - 4t $$  
+   $$ y = 1 + 6t $$  
+   $$ z = -2t $$
+
+Thus, the line of intersection is:  
+$$ (x, y, z) = (1 - 4t, 1 + 6t, -2t) $$  
+where t is the parameter.
