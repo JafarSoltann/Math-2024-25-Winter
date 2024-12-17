@@ -516,9 +516,10 @@ $e \approx 2.718$
 
 ## 20. Limits of Real Functions
 
-1. Compute:
+### 1. Compute:
    - $\displaystyle\lim_{x \to \infty} \frac{x^3 + 2x^2}{x^4 - 3x^3}$
 ## Solution
+![alt text](image-23.png)
 ### Given
 $\lim_{x \to \infty} \frac{x^3 + 2x^2}{x^4 - 3x^3}$
 
@@ -532,3 +533,23 @@ $\frac{0 + 0}{1 - 0} = 0$
 
 ### Final Answer
 $\lim_{x \to \infty} \frac{x^3 + 2x^2}{x^4 - 3x^3} = 0$
+
+### 2. Find:
+   
+   - $\displaystyle \lim_{x \to 0} \frac{\sin(3x)}{2x+1}$.
+## Solution
+
+### Given
+$\lim_{x \to 0} \frac{\sin(3x)}{2x+1}$
+
+### Step 1: Evaluate the numerator and denominator at $x = 0$
+- $\sin(3x) \to \sin(0) = 0$
+- $2x + 1 \to 2(0) + 1 = 1$
+
+The limit has the indeterminate form $\frac{0}{1}$, so we can directly substitute.
+
+### Step 2: Substitute $x = 0$
+$\frac{\sin(3x)}{2x+1} = \frac{0}{1} = 0$
+
+### Final Answer
+$\lim_{x \to 0} \frac{\sin(3x)}{2x+1} = 0$
