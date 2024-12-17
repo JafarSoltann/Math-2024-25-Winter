@@ -496,17 +496,18 @@ $lim_{n \to \infty} \frac{\sin(n)}{n} = 0$
 
 ### 4. Find the limit of the sequence:
    - $a_n = (1+\frac{1}{n})^n$
+## Solution   
 ### Given Sequence
 The sequence is:
-$$ a_n = \left( 1 + \frac{1}{n} \right)^n $$
+$a_n = \left( 1 + \frac{1}{n} \right)^n$
 
 ### Step 1: Recognize the Standard Limit Form
-This sequence is a well-known limit, and as \( n \to \infty \), the sequence approaches the mathematical constant \( e \), which is the base of natural logarithms.
+This sequence is a well-known limit, and as $n \to \infty$, the sequence approaches the mathematical constant $e$, which is the base of natural logarithms.
 
 ### Step 2: Apply the Limit
-The limit of the sequence as \( n \to \infty \) is:
-$$ \lim_{n \to \infty} \left( 1 + \frac{1}{n} \right)^n = e $$
+The limit of the sequence as $n \to \infty$ is:
+$\lim_{n \to \infty} \left( 1 + \frac{1}{n} \right)^n = e$
 
 ### Conclusion
 The limit of the sequence is:
-$$ e \approx 2.718 $$ 
+$e \approx 2.718$ 
