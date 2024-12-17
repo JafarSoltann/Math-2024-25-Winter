@@ -258,3 +258,25 @@ $$
 
 ### Conclusion
 Since one sphere is entirely inside the other, **there are no common points**.
+
+* What curve in space is formed by the intersection of the sphere $x^2 + y^2 + z^2 = 1$ with the sphere $(x-1)^2 + y^2 + z^2 = 1$? Find the equation of this curve.
+![alt text](image-13.png)
+
+### Given Spheres
+- Sphere 1: $x^2 + y^2 + z^2 = 1$ (center: $(0, 0, 0)$, radius: $1$)
+- Sphere 2: $(x - 1)^2 + y^2 + z^2 = 1$ (center: $(1, 0, 0)$, radius: $1$)
+
+### Step 1: Solve for $x$
+Expanding the second sphere equation:
+$$(x - 1)^2 + y^2 + z^2 = 1 \Rightarrow x^2 + y^2 + z^2 - 2x + 1 = 1$$
+
+Substitute $x^2 + y^2 + z^2 = 1$:
+$$1 - 2x + 1 = 1 \Rightarrow -2x + 1 = 0 \Rightarrow x = \frac{1}{2}$$
+
+### Step 2: Equation of the Curve
+Substitute $x = \frac{1}{2}$ into $x^2 + y^2 + z^2 = 1$:
+$$\left(\frac{1}{2}\right)^2 + y^2 + z^2 = 1 \Rightarrow \frac{1}{4} + y^2 + z^2 = 1 \Rightarrow y^2 + z^2 = \frac{3}{4}$$
+
+### Conclusion
+The intersection curve is a circle in the plane $x = \frac{1}{2}$ with equation:
+$$y^2 + z^2 = \frac{3}{4}$$
