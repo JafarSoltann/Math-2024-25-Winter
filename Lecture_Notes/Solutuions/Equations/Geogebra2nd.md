@@ -310,3 +310,33 @@ z = 1
 ### Final Answer
 The equation of the tangent plane is:
 z = 1
+
+## 18. Functions
+
+1. Draw in a single Geogebra notebook the following functions:
+   - $f(x) = x^2$
+   - $g(x) = \sqrt{x}$
+   - $h(x) = \frac{1}{x}$
+   - $j(x) = \sin(x)$
+
+Find value of all the above functions at $x = 2$.
+![alt text](image-15.png)
+
+### Given Functions
+- $f(x) = x^2$
+- $g(x) = \sqrt{x}$
+- $h(x) = \frac{1}{x}$
+- $j(x) = \sin(x)$
+
+### Values at $x = 2$
+- $f(2) = 2^2 = 4$
+- $g(2) = \sqrt{2} \approx 1.414$
+- $h(2) = \frac{1}{2} = 0.5$
+- $j(2) = \sin(2) \approx 0.909$
+
+### Conclusion
+At $x = 2$, the values are:
+- $f(2) = 4$
+- $g(2) \approx 1.414$
+- $h(2) = 0.5$
+- $j(2) \approx 0.909$
