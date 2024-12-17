@@ -289,15 +289,15 @@ $$y^2 + z^2 = \frac{3}{4}$$
 - Point: $P(1, 0, 1)$
 
 ### Step 1: Find the Partial Derivatives
-- $f_x(x, y) = 2(x - 1)$
-- $f_y(x, y) = 2y$
+- $\frac{\partial z}{\partial x} = 2(x - 1)$
+- $\frac{\partial z}{\partial y} = 2y$
 
-### Step 2: Evaluate the Partial Derivatives at $P(1, 0)$
-- $f_x(1, 0) = 0$
-- $f_y(1, 0) = 0$
+### Step 2: Evaluate the Partial Derivatives at $P(1, 0, 1)$
+- $f_x(1, 0) = 2(1 - 1) = 0$
+- $f_y(1, 0) = 2(0) = 0$
 
-### Step 3: Equation of the Tangent Plane
-The tangent plane equation is:
+### Step 3: Write the Tangent Plane Equation
+The equation of the tangent plane is:
 $$
 z - 1 = 0(x - 1) + 0(y - 0)
 $$
