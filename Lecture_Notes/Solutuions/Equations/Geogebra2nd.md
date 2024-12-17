@@ -570,13 +570,9 @@ $\lim_{x \to 0} \frac{\sin(3x)}{2x+1} = 0$
 
 #### Horizontal Asymptotes:
 - Compute $\lim_{x \to \infty} f(x)$:
-  $$
-  f(x) = \frac{x^2 - 1}{x^2 + 1} = \frac{x^2(1 - \frac{1}{x^2})}{x^2(1 + \frac{1}{x^2})} = \frac{1 - \frac{1}{x^2}}{1 + \frac{1}{x^2}}
-  $$
+  $f(x) = \frac{x^2 - 1}{x^2 + 1} = \frac{x^2(1 - \frac{1}{x^2})}{x^2(1 + \frac{1}{x^2})} = \frac{1 - \frac{1}{x^2}}{1 + \frac{1}{x^2}}$
   As $x \to \infty$, $\frac{1}{x^2} \to 0$, so:
-  $$
-  \lim_{x \to \infty} f(x) = \frac{1}{1} = 1
-  $$
+  $\lim_{x \to \infty} f(x) = \frac{1}{1} = 1$
 
   Similarly, $\lim_{x \to -\infty} f(x) = 1$.
 
@@ -592,14 +588,10 @@ $\lim_{x \to 0} \frac{\sin(3x)}{2x+1} = 0$
 
 #### Horizontal Asymptotes:
 - Compute $\lim_{x \to \infty} g(x)$:
-  $$
-  g(x) = \frac{\sin(x)}{x^2 + 1}
-  $$
+  $g(x) = \frac{\sin(x)}{x^2 + 1}$
   The numerator, $\sin(x)$, oscillates between $-1$ and $1$, while the denominator $x^2 + 1 \to \infty$ as $x \to \infty$. Hence:
-  $$
-  \lim_{x \to \infty} g(x) = 0
-  $$
-  Similarly, $\lim_{x \to -\infty} g(x) = 0$.
+  $\lim_{x \to \infty} g(x) = 0$
+Similarly, $\lim_{x \to -\infty} g(x) = 0$.
 
 - **Horizontal Asymptote**: $y = 0$
 
