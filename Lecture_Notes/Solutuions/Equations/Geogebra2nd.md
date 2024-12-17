@@ -298,17 +298,14 @@ $$y^2 + z^2 = \frac{3}{4}$$
 
 ### Step 3: Equation of the Tangent Plane
 Using the formula:
-$$
-z - z_0 = f_x(x_0, y_0)(x - x_0) + f_y(x_0, y_0)(y - y_0)
-$$
+$z - z_0 = f_x(x_0, y_0)(x - x_0) + f_y(x_0, y_0)(y - y_0)$
+
 Substitute $P(1, 0, 1)$:
-$$
-z - 1 = 0(x - 1) + 0(y - 0)
-$$
+
+$z - 1 = 0(x - 1) + 0(y - 0)$
 Simplifies to:
-$$
 z = 1
-$$
+
 
 ### Final Answer
 The equation of the tangent plane is:
