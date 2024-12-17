@@ -383,3 +383,17 @@ The compositions of these two functions result in the identity function $x$, mea
 
 ### Conclusion
 - The inverse function is $f^{-1} = \{(7,1), (9,2), (11,3)\}$.
+
+### 5. We have function $f=\{(1,7), (2,7), (3,11)\}$. Give inverse function $f^{-1}$.
+### Given Function
+- $f = \{(1,7), (2,7), (3,11)\}$
+
+### Inverse Function
+- For a function to have an inverse, it must be one-to-one (injective). In this case, both $f(1) = 7$ and $f(2) = 7$, so the function is not one-to-one.
+
+### Explanation
+- A function must be **injective (one-to-one)** for an inverse to exist. This means that every output (y-value) must correspond to exactly one input (x-value). If multiple inputs map to the same output, the function is not one-to-one, and no inverse can be defined.
+- In this case, $f(1) = 7$ and $f(2) = 7$, meaning two different inputs (1 and 2) give the same output (7). Therefore, the function $f$ does not have an inverse.
+
+### Conclusion
+- The function $f$ does not have an inverse because it is not one-to-one.
