@@ -309,6 +309,4 @@ z = 1
 
 ### Final Answer
 The equation of the tangent plane is:
-$$
 z = 1
-$$
