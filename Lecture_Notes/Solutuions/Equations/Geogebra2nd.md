@@ -342,17 +342,46 @@ Find value of all the above functions at $x = 2$.
    - $g(g(x))$
 
 and visualize functions in a single Geogebra notebook.
-![alt text](image-16.png)
+![alt text](image-27.png)
 
-### Given Functions
+# Solution
+
+### Given Functions:
 - $f(x) = 3x - 1$
 - $g(x) = \sqrt{x}$
 
-### Composite Functions
-1. $f(g(x)) = 3\sqrt{x} - 1$
-2. $g(f(x)) = \sqrt{3x - 1}$
-3. $f(f(x)) = 9x - 4$
-4. $g(g(x)) = x^{1/4}$
+### Steps:
+
+#### 1. Compute $f(g(x))$:
+Substitute $g(x) = \sqrt{x}$ into $f(x) = 3x - 1$:
+$$
+f(g(x)) = f(\sqrt{x}) = 3\sqrt{x} - 1
+$$
+
+#### 2. Compute $g(f(x))$:
+Substitute $f(x) = 3x - 1$ into $g(x) = \sqrt{x}$:
+$$
+g(f(x)) = g(3x - 1) = \sqrt{3x - 1}
+$$
+
+#### 3. Compute $f(f(x))$:
+Substitute $f(x) = 3x - 1$ into itself:
+$$
+f(f(x)) = f(3x - 1) = 3(3x - 1) - 1 = 9x - 4
+$$
+
+#### 4. Compute $g(g(x))$:
+Substitute $g(x) = \sqrt{x}$ into itself:
+$$
+g(g(x)) = g(\sqrt{x}) = \sqrt{\sqrt{x}} = x^{1/4}
+$$
+
+### Final Results:
+- $f(g(x)) = 3\sqrt{x} - 1$
+- $g(f(x)) = \sqrt{3x - 1}$
+- $f(f(x)) = 9x - 4$
+- $g(g(x)) = x^{1/4}$
+
 
 ### 3. Let $f(x) = e^x$ and $g(x) = \ln(x)$. Check: $f(g(x))$ and $g(f(x))$. What do you notice?
 ![alt text](image-17.png)
