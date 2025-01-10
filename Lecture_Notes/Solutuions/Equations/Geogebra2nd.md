@@ -354,7 +354,7 @@ and visualize functions in a single Geogebra notebook.
 
 #### 1. Compute $f(g(x))$:
 Substitute $g(x) = \sqrt{x}$ into $f(x) = 3x - 1$:
-$ f(g(x)) = f(\sqrt{x}) = 3\sqrt{x} - 1 $
+$f(g(x)) = f(\sqrt{x}) = 3\sqrt{x} - 1$
 
 #### 2. Compute $g(f(x))$:
 Substitute $f(x) = 3x - 1$ into $g(x) = \sqrt{x}$:
