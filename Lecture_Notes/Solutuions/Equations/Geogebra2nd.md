@@ -358,21 +358,15 @@ $f(g(x)) = f(\sqrt{x}) = 3\sqrt{x} - 1$
 
 #### 2. Compute $g(f(x))$:
 Substitute $f(x) = 3x - 1$ into $g(x) = \sqrt{x}$:
-$$
-g(f(x)) = g(3x - 1) = \sqrt{3x - 1}
-$$
+$g(f(x)) = g(3x - 1) = \sqrt{3x - 1}$
 
 #### 3. Compute $f(f(x))$:
 Substitute $f(x) = 3x - 1$ into itself:
-$$
-f(f(x)) = f(3x - 1) = 3(3x - 1) - 1 = 9x - 4
-$$
+$f(f(x)) = f(3x - 1) = 3(3x - 1) - 1 = 9x - 4$
 
 #### 4. Compute $g(g(x))$:
 Substitute $g(x) = \sqrt{x}$ into itself:
-$$
-g(g(x)) = g(\sqrt{x}) = \sqrt{\sqrt{x}} = x^{1/4}
-$$
+$g(g(x)) = g(\sqrt{x}) = \sqrt{\sqrt{x}} = x^{1/4}$
 
 ### Final Results:
 - $f(g(x)) = 3\sqrt{x} - 1$
