@@ -400,41 +400,41 @@ The area of the region can be found by integrating the difference between the up
 
 Thus, the area $A$ is given by the integral:
 
-$$ A = \int_{1}^{2} (x^2 + 1) \, dx $$
+$A = \int_{1}^{2} (x^2 + 1) \, dx$
 
 ### Step 2: Compute the Integral
 
 To solve the integral:
 
-$$ A = \int_{1}^{2} (x^2 + 1) \, dx $$
+$A = \int_{1}^{2} (x^2 + 1) \, dx$
 
 First, integrate each term:
 
-$$ \int x^2 \, dx = \frac{x^3}{3} $$  
-$$ \int 1 \, dx = x $$
+$\int x^2 \, dx = \frac{x^3}{3}$  
+$\int 1 \, dx = x$
 
 Now, apply the limits of integration:
 
-$$ A = \left[\frac{x^3}{3} + x \right]_{1}^{2} $$
+$A = \left[\frac{x^3}{3} + x \right]_{1}^{2}$
 
 ### Step 3: Evaluate the Definite Integral
 
 Substitute the upper and lower limits:
 
 - At $x = 2$:
-  $$ \frac{2^3}{3} + 2 = \frac{8}{3} + 2 = \frac{8}{3} + \frac{6}{3} = \frac{14}{3} $$
+  $\frac{2^3}{3} + 2 = \frac{8}{3} + 2 = \frac{8}{3} + \frac{6}{3} = \frac{14}{3}$
 
 - At $x = 1$:
-  $$ \frac{1^3}{3} + 1 = \frac{1}{3} + 1 = \frac{1}{3} + \frac{3}{3} = \frac{4}{3} $$
+  $\frac{1^3}{3} + 1 = \frac{1}{3} + 1 = \frac{1}{3} + \frac{3}{3} = \frac{4}{3}$
 
 Now, subtract the two results:
 
-$$ A = \frac{14}{3} - \frac{4}{3} = \frac{10}{3} $$
+$A = \frac{14}{3} - \frac{4}{3} = \frac{10}{3}$
 
 ### Step 4: Conclusion
 
 The area of the region is:
 
-$$ A = \frac{10}{3} $$
+$A = \frac{10}{3}$
 
 Thus, the area of the region bounded by the lines $x = 1$, $x = 2$, $y = 0$, and $y = x^2 + 1$ is $\frac{10}{3}$ square units.
