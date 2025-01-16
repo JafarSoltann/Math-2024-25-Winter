@@ -277,3 +277,65 @@ The tangent line to the curve $f(x) = e^{\sin(x)}$ at $x_0 = \pi$ is:
 $$y = -x + \pi + 1$$
 ![alt text](image-8.png)
 https://www.geogebra.org/calculator/jvwc2dkw
+
+## 24. Integrals
+![alt text](image-9.png)
+### 1. Compute:
+
+1. $\int 1 \, dx$  
+   **Solution:**  
+   $x + C$
+
+2. $\int (x^2 + 2) \, dx$  
+   **Solution:**  
+   $\frac{x^3}{3} + 2x + C$
+
+3. $\int 2\sin(x) \, dx$  
+   **Solution:**  
+   $-2\cos(x) + C$
+
+4. $\int \frac{3}{x} \, dx$  
+   **Solution:**  
+   $3\ln|x| + C$
+
+5. $\int \frac{1}{x^2} \, dx$  
+   **Solution:**  
+   $-\frac{1}{x} + C$
+
+6. $\int \left( \frac{1}{3}x^4 - 5 \right) \, dx$  
+   **Solution:**  
+   $\frac{1}{15}x^5 - 5x + C$
+
+7. $\int (\sin^2 x + \cos^2 x) \, dx$  
+   **Solution:**  
+   $x + C$  
+   *(Using the Pythagorean identity $\sin^2 x + \cos^2 x = 1$.)*
+
+8. $\int (5 \sin x + 3e^x) \, dx$  
+   **Solution:**  
+   $-5\cos(x) + 3e^x + C$
+
+9. $\int \sqrt[3]{x} \, dx$  
+   **Solution:**  
+   $\frac{3}{4}x^{4/3} + C$
+
+10. $\int \sqrt{10x} \, dx$  
+    **Solution:**  
+    $\frac{2}{3}(10x)^{3/2} + C$
+
+11. $\int \cos\left(\frac{5}{2}x + 3\right) \, dx$  
+    **Solution:**  
+    $\frac{2}{5}\sin\left(\frac{5}{2}x + 3\right) + C$
+
+12. $\int \frac{\cos(\ln(x))}{x} \, dx$  
+    **Solution:**  
+    $\sin(\ln(x)) + C$
+
+13. $\int x \ln(x) \, dx$  
+    **Solution:**  
+    $\frac{x^2}{2} \ln(x) - \frac{x^2}{4} + C$
+
+14. $\int x e^x \, dx$  
+    **Solution:**  
+    $(x - 1)e^x + C$
+
