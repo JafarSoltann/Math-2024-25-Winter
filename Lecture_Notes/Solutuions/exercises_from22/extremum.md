@@ -489,3 +489,51 @@ This integral is non-trivial and does not have a simple elementary antiderivativ
 $L \approx 3.8202$
 
 Thus, the length of the sine curve over the interval $[0, \pi]$ is approximately **3.8202**.
+
+## 24. Distance of a Moving Particle
+
+Given the position function $x(t) = 3t^2 - 6t + 1$, we need to find the distance of the moving particle between time $t=0$ and $t=2$.
+
+### Solution:
+
+1. **Find the velocity** by taking the derivative of the position function:
+
+   $$
+   v(t) = \frac{d}{dt} [3t^2 - 6t + 1] = 6t - 6
+   $$
+
+2. **Calculate the displacement** between $t=0$ and $t=2$:
+
+   At $t = 0$:  
+   $x(0) = 3(0)^2 - 6(0) + 1 = 1$
+
+   At $t = 2$:  
+   $x(2) = 3(2)^2 - 6(2) + 1 = 3(4) - 12 + 1 = 12 - 12 + 1 = 1$
+
+   The displacement is:  
+   $x(2) - x(0) = 1 - 1 = 0$
+
+3. **Check if the velocity changes sign** to determine if the particle changes direction.  
+
+   The velocity function is $v(t) = 6t - 6$.  
+   Set $v(t) = 0$ to find when the particle changes direction:  
+   $$
+   6t - 6 = 0 \quad \Rightarrow \quad t = 1
+   $$
+
+4. **Find the distance traveled** by the particle by calculating the distance between $t=0$ and $t=1$, and between $t=1$ and $t=2$.
+
+   - For $t = 0$ to $t = 1$, the position changes from $x(0) = 1$ to $x(1) = 3(1)^2 - 6(1) + 1 = 3 - 6 + 1 = -2$.  
+     The distance traveled is $|x(1) - x(0)| = |-2 - 1| = 3$.
+
+   - For $t = 1$ to $t = 2$, the position changes from $x(1) = -2$ to $x(2) = 1$.  
+     The distance traveled is $|x(2) - x(1)| = |1 - (-2)| = 3$.
+
+5. **Total distance traveled** is the sum of the distances:
+
+   $$
+   \text{Total distance} = 3 + 3 = 6
+   $$
+
+### Final Answer:
+The distance traveled by the particle between $t=0$ and $t=2$ is $6$ units.
