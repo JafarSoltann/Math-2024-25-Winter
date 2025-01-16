@@ -498,9 +498,7 @@ Given the position function $x(t) = 3t^2 - 6t + 1$, we need to find the distance
 
 1. **Find the velocity** by taking the derivative of the position function:
 
-   $$
-   v(t) = \frac{d}{dt} [3t^2 - 6t + 1] = 6t - 6
-   $$
+   $v(t) = \frac{d}{dt} [3t^2 - 6t + 1] = 6t - 6$
 
 2. **Calculate the displacement** between $t=0$ and $t=2$:
 
@@ -517,9 +515,7 @@ Given the position function $x(t) = 3t^2 - 6t + 1$, we need to find the distance
 
    The velocity function is $v(t) = 6t - 6$.  
    Set $v(t) = 0$ to find when the particle changes direction:  
-   $$
-   6t - 6 = 0 \quad \Rightarrow \quad t = 1
-   $$
+   $6t - 6 = 0 \quad \Rightarrow \quad t = 1$
 
 4. **Find the distance traveled** by the particle by calculating the distance between $t=0$ and $t=1$, and between $t=1$ and $t=2$.
 
@@ -531,9 +527,7 @@ Given the position function $x(t) = 3t^2 - 6t + 1$, we need to find the distance
 
 5. **Total distance traveled** is the sum of the distances:
 
-   $$
-   \text{Total distance} = 3 + 3 = 6
-   $$
+   $b  \text{Total distance} = 3 + 3 = 6$
 
 ### Final Answer:
 The distance traveled by the particle between $t=0$ and $t=2$ is $6$ units.
