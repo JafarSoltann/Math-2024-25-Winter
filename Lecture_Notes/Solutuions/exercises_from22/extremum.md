@@ -490,7 +490,7 @@ $L \approx 3.8202$
 
 Thus, the length of the sine curve over the interval $[0, \pi]$ is approximately **3.8202**.
 
-## 5. Distance of a Moving Particle
+## 6. Distance of a Moving Particle
 
 Given the position function $x(t) = 3t^2 - 6t + 1$, we need to find the distance of the moving particle between time $t=0$ and $t=2$.
 
@@ -531,3 +531,66 @@ Given the position function $x(t) = 3t^2 - 6t + 1$, we need to find the distance
 
 ### Final Answer:
 The distance traveled by the particle between $t=0$ and $t=2$ is $6$ units.
+
+## 25. Differential Equations
+### 1. Solve the First-Order Ordinary Differential Equations
+
+### 1. Solve $y'(x) = y$
+
+**Solution:**
+
+This is a separable differential equation. We can write it as:
+
+$\frac{dy}{dx} = y$
+
+Separate the variables:
+
+$\frac{1}{y} \, dy = dx$
+
+Integrate both sides:
+
+$\int \frac{1}{y} \, dy = \int 1 \, dx$
+
+This gives:
+
+$\ln |y| = x + C$
+
+Exponentiate both sides:
+
+$|y| = e^{x + C} = e^C e^x$
+
+Let $e^C = C_1$ (where $C_1$ is a constant):
+
+$|y| = C_1 e^x$
+
+Thus:
+
+$y(x) = C_1 e^x$
+
+### 2. Solve $y'(x) = \frac{1}{2y(x)}$
+
+**Solution:**
+
+This is also a separable differential equation. We can rewrite it as:
+
+$\frac{dy}{dx} = \frac{1}{2y}$
+
+Separate the variables:
+
+$2y \, dy = dx$
+
+Integrate both sides:
+
+$\int 2y \, dy = \int 1 \, dx$
+
+This gives:
+
+$y^2 = x + C$
+
+Take the square root of both sides:
+
+$y = \pm \sqrt{x + C}$
+
+Thus, the general solution is:
+
+$y(x) = \pm \sqrt{x + C}$
