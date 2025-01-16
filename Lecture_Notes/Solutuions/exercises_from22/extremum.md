@@ -697,3 +697,111 @@ $y(x) = C_2 e^{\frac{x^2}{2}}$
    * $y''(x) - y(x)= 0$, with boundary conditions $y(0) = 2$ and $y'(0) = 0$
 
    * $\frac{d^2\,y(x)}{dx^2} = -\omega^2 y(x)$.
+
+   ## 24. Solve the Second-Order Ordinary Differential Equations
+
+### 1. Solve $y''(x) + y'(x) = 0$, with boundary conditions $y(0) = 2$ and $y'(0) = -1$
+
+**Solution:**
+
+This is a linear second-order homogeneous differential equation. First, solve the characteristic equation:
+
+$r^2 + r = 0$
+
+Factor the equation:
+
+$r(r + 1) = 0$
+
+Thus, the solutions for $r$ are $r = 0$ and $r = -1$. Therefore, the general solution is:
+
+$y(x) = C_1 + C_2 e^{-x}$
+
+Now, apply the boundary conditions:
+
+- At $x = 0$, $y(0) = 2$, so:
+
+$C_1 + C_2 e^{0} = 2$
+
+This simplifies to:
+
+$C_1 + C_2 = 2$
+
+- The derivative is $y'(x) = -C_2 e^{-x}$, and at $x = 0$, $y'(0) = -1$, so:
+
+$-C_2 e^{0} = -1$
+
+This simplifies to:
+
+$C_2 = 1$
+
+Substitute $C_2 = 1$ into the equation $C_1 + C_2 = 2$:
+
+$C_1 + 1 = 2 \Rightarrow C_1 = 1$
+
+Thus, the solution is:
+
+$y(x) = 1 + e^{-x}$
+
+---
+
+### 2. Solve $y''(x) - y(x) = 0$, with boundary conditions $y(0) = 2$ and $y'(0) = 0$
+
+**Solution:**
+
+This is a linear second-order homogeneous differential equation. First, solve the characteristic equation:
+
+$r^2 - 1 = 0$
+
+Factor the equation:
+
+$(r - 1)(r + 1) = 0$
+
+Thus, the solutions for $r$ are $r = 1$ and $r = -1$. Therefore, the general solution is:
+
+$y(x) = C_1 e^{x} + C_2 e^{-x}$
+
+Now, apply the boundary conditions:
+
+- At $x = 0$, $y(0) = 2$, so:
+
+$C_1 e^{0} + C_2 e^{0} = 2$
+
+This simplifies to:
+
+$C_1 + C_2 = 2$
+
+- The derivative is $y'(x) = C_1 e^{x} - C_2 e^{-x}$, and at $x = 0$, $y'(0) = 0$, so:
+
+$C_1 - C_2 = 0$
+
+This simplifies to:
+
+$C_1 = C_2$
+
+Substitute $C_1 = C_2$ into the equation $C_1 + C_2 = 2$:
+
+$2C_1 = 2 \Rightarrow C_1 = 1$
+
+Thus, the solution is:
+
+$y(x) = e^{x} + e^{-x} = 2\cosh(x)$
+
+---
+
+### 3. Solve $\frac{d^2\,y(x)}{dx^2} = -\omega^2 y(x)$
+
+**Solution:**
+
+This is a second-order homogeneous differential equation with constant coefficients. The characteristic equation is:
+
+$r^2 + \omega^2 = 0$
+
+Thus, the solutions for $r$ are:
+
+$r = \pm i\omega$
+
+Therefore, the general solution is:
+
+$y(x) = C_1 \cos(\omega x) + C_2 \sin(\omega x)$
+
+This is the general solution for the differential equation.
