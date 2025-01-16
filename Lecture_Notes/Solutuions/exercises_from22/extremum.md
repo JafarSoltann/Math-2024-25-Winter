@@ -139,8 +139,8 @@ Simplify:
 $f(x) = 1 - \frac{x^2}{2} + \frac{x^4}{24}.$
 
 #### Conclusion:
-The Taylor series of $ \cos(x) $ around $ x = 0 $ up to the 4th degree is:
-$\cos(x) \approx 1 - \frac{x^2}{2} + \frac{x^4}{24}.$
+The Taylor series of $\cos(x)$ around $x = 0$ up to the 4th degree is:
+$cos(x)\approx 1 - \frac{x^2}{2} + \frac{x^4}{24}$
 
 ![alt text](image-4.png)
 https://www.geogebra.org/calculator/qtjafubg
@@ -177,7 +177,7 @@ Simplify:
 $h(x) = 1 + x + x^2 + x^3 + x^4$
 
 #### Conclusion:
-The Taylor series of $ \frac{1}{1 - x} $ around $ x = 0 $ up to the 4th degree is:
+The Taylor series of $\frac{1}{1 - x}$ around $x = 0$ up to the 4th degree is:
 $h(x) \approx 1 + x + x^2 + x^3 + x^4$
 
 
