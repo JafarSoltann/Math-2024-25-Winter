@@ -104,3 +104,43 @@ The critical points are $\mathbf{x = 3}$ and $\mathbf{x = -1}$. Substitute these
 $f(3) = \frac{(3 + 1)^2}{3 - 1} = \frac{16}{2} = 8, \quad f(-1) = \frac{(-1 + 1)^2}{-1 - 1} = 0$
 
 Extremum values are f(3) = 8 (maximum) and f(-1) = 0 (minimum).
+
+## 23. Taylor Series
+1. Find the Taylor series and visualize obtained functions in Geogebra:
+- $f(x) = \cos(x)$ around $x = 0$ up to the 4th degree.
+
+### Taylor Series of $f(x) = \cos(x)$ around $x = 0$ up to the 4th degree
+
+To find the Taylor series of $f(x) = \cos(x)$ around $x = 0$ up to the 4th degree, follow these steps:
+
+#### 1. Find the derivatives of $f(x) = \cos(x)$:
+- $f(x) = \cos(x)$
+- $f'(x) = -\sin(x)$
+- $f''(x) = -\cos(x)$
+- $f^{(3)}(x) = \sin(x)$
+- $f^{(4)}(x) = \cos(x)$
+
+#### 2. Evaluate the derivatives at $x = 0$:
+- $f(0) = \cos(0) = 1$
+- $f'(0) = -\sin(0) = 0$
+- $f''(0) = -\cos(0) = -1$
+- $f^{(3)}(0) = \sin(0) = 0$
+- $f^{(4)}(0) = \cos(0) = 1$
+
+#### 3. Write the Taylor series formula:
+The Taylor series around $x = 0$ is given by:
+$f(x) = f(0) + f'(0) \frac{x}{1!} + f''(0) \frac{x^2}{2!} + f^{(3)}(0) \frac{x^3}{3!} + f^{(4)}(0) \frac{x^4}{4!} + \cdots$
+
+#### 4. Substitute the values into the series:
+Substitute the derivatives evaluated at $x = 0$ into the formula:
+$f(x) = 1 + 0 \cdot \frac{x}{1!} - 1 \cdot \frac{x^2}{2!} + 0 \cdot \frac{x^3}{3!} + 1 \cdot \frac{x^4}{4!}.$
+
+Simplify:
+$f(x) = 1 - \frac{x^2}{2} + \frac{x^4}{24}.$
+
+#### Conclusion:
+The Taylor series of $ \cos(x) $ around $ x = 0 $ up to the 4th degree is:
+$\cos(x) \approx 1 - \frac{x^2}{2} + \frac{x^4}{24}.$
+
+![alt text](image-4.png)
+https://www.geogebra.org/calculator/qtjafubg
