@@ -467,3 +467,25 @@ $P = -(-1) + 1 = 1 + 1 = 2$
 Thus, the area under the sine curve over the interval $[0, \pi]$ is:
 
 $P = 2$
+
+## 5. Calculate the length of the sine curve over the interval $[0, \pi]$
+
+The length of the sine curve is given by the formula:
+
+$L = \int_a^b \sqrt{1 + (f'(x))^2} \, dx$
+
+For the sine function $f(x) = \sin(x)$, we first need to calculate its derivative:
+
+$f'(x) = \cos(x)$
+
+Thus, the integral becomes:
+
+$L = \int_0^\pi \sqrt{1 + \cos^2(x)} \, dx$
+
+### Solution
+
+This integral is non-trivial and does not have a simple elementary antiderivative, but it can be solved numerically. Using numerical integration (such as a method like Simpson's rule, or using a calculator), the approximate value of the integral is:
+
+$L \approx 3.8202$
+
+Thus, the length of the sine curve over the interval $[0, \pi]$ is approximately **3.8202**.
