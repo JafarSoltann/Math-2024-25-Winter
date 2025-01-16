@@ -539,6 +539,7 @@ The distance traveled by the particle between $t=0$ and $t=2$ is $6$ units.
 
 **Solution:**
 
+![alt text](image-13.png)
 This is a separable differential equation. We can write it as:
 
 $\frac{dy}{dx} = y$
@@ -594,3 +595,105 @@ $y = \pm \sqrt{x + C}$
 Thus, the general solution is:
 
 $y(x) = \pm \sqrt{x + C}$
+
+### 3. Solve the first-order ordinary differential equations using the method of separation of variables for $x$ and $y=y(x)$:
+
+   - $\frac{dy}{dx} = \frac{x}{y}$
+   - $\frac{dy}{dx} = \frac{y}{x}$
+   - $\frac{dy}{dx} = xy$
+
+![alt text](image-14.png)
+## 24. Solve the First-Order Ordinary Differential Equations Using the Method of Separation of Variables
+
+### 1. Solve $\frac{dy}{dx} = \frac{x}{y}$
+
+**Solution:**
+
+This is a separable differential equation. We can rewrite it as:
+
+$y \, dy = x \, dx$
+
+Now, integrate both sides:
+
+$\int y \, dy = \int x \, dx$
+
+This gives:
+
+$\frac{y^2}{2} = \frac{x^2}{2} + C$
+
+Multiply both sides by 2:
+
+$y^2 = x^2 + C'$
+
+Thus, the general solution is:
+
+$y = \pm \sqrt{x^2 + C'}$
+
+---
+
+### 2. Solve $\frac{dy}{dx} = \frac{y}{x}$
+
+**Solution:**
+
+This is another separable differential equation. We can rewrite it as:
+
+$\frac{dy}{y} = \frac{dx}{x}$
+
+Now, integrate both sides:
+
+$\int \frac{1}{y} \, dy = \int \frac{1}{x} \, dx$
+
+This gives:
+
+$\ln |y| = \ln |x| + C$
+
+Exponentiate both sides:
+
+$|y| = e^C |x|$
+
+Let $e^C = C_1$:
+
+$y = C_1 x$
+
+Thus, the general solution is:
+
+$y(x) = C_1 x$
+
+---
+
+### 3. Solve $\frac{dy}{dx} = xy$
+
+**Solution:**
+
+This is a separable differential equation. We can rewrite it as:
+
+$\frac{1}{y} \, dy = x \, dx$
+
+Now, integrate both sides:
+
+$\int \frac{1}{y} \, dy = \int x \, dx$
+
+This gives:
+
+$\ln |y| = \frac{x^2}{2} + C$
+
+Exponentiate both sides:
+
+$|y| = e^{\frac{x^2}{2} + C} = e^C e^{\frac{x^2}{2}}$
+
+Let $e^C = C_2$:
+
+$y = C_2 e^{\frac{x^2}{2}}$
+
+Thus, the general solution is:
+
+$y(x) = C_2 e^{\frac{x^2}{2}}$
+
+
+### 4. Solve the second-order ordinary differential equations:
+
+   * $y''(x) + y'(x) = 0$, with boundary conditions $y(0) = 2$ and $y'(0) = -1$
+
+   * $y''(x) - y(x)= 0$, with boundary conditions $y(0) = 2$ and $y'(0) = 0$
+
+   * $\frac{d^2\,y(x)}{dx^2} = -\omega^2 y(x)$.
