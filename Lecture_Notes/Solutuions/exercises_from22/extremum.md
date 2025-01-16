@@ -106,6 +106,7 @@ $f(3) = \frac{(3 + 1)^2}{3 - 1} = \frac{16}{2} = 8, \quad f(-1) = \frac{(-1 + 1)
 Extremum values are f(3) = 8 (maximum) and f(-1) = 0 (minimum).
 
 ## 23. Taylor Series
+![alt text](image-6.png)
 1. Find the Taylor series and visualize obtained functions in Geogebra:
 - $f(x) = \cos(x)$ around $x = 0$ up to the 4th degree.
 
@@ -183,3 +184,42 @@ $h(x) \approx 1 + x + x^2 + x^3 + x^4$
 
 ![alt text](image-5.png)
 https://www.geogebra.org/calculator/xcnegeya
+
+- $g(x) = \sin(x)$ around $x = \pi$ up to the 4rd degree.
+
+### Taylor Series of $g(x) = \sin(x)$ around $x = \pi$ up to the 4th degree
+
+To find the Taylor series of $g(x) = \sin(x)$ around $x = \pi$ up to the 4th degree, follow these steps:
+
+#### 1. Find the derivatives of $g(x) = \sin(x)$:
+- $g(x) = \sin(x)$
+- $g'(x) = \cos(x)$
+- $g''(x) = -\sin(x)$
+- $g^{(3)}(x) = -\cos(x)$
+- $g^{(4)}(x) = \sin(x)$
+
+#### 2. Evaluate the derivatives at $x = \pi$:
+- $g(\pi) = \sin(\pi) = 0$
+- $g'(\pi) = \cos(\pi) = -1$
+- $g''(\pi) = -\sin(\pi) = 0$
+- $g^{(3)}(\pi) = -\cos(\pi) = 1$
+- $g^{(4)}(\pi) = \sin(\pi) = 0$
+
+#### 3. Write the Taylor series formula:
+The Taylor series of $g(x)$ around $x = \pi$ is given by:
+$g(x) = g(\pi) + g'(\pi) \frac{x - \pi}{1!} + g''(\pi) \frac{(x - \pi)^2}{2!} + g^{(3)}(\pi) \frac{(x - \pi)^3}{3!} + g^{(4)}(\pi) \frac{(x - \pi)^4}{4!} + \cdots$
+
+#### 4. Substitute the values into the series:
+Substitute the derivatives evaluated at $x = \pi$ into the formula:
+$g(x) = 0 + (-1) \cdot \frac{x - \pi}{1!} + 0 \cdot \frac{(x - \pi)^2}{2!} + 1 \cdot \frac{(x - \pi)^3}{3!} + 0 \cdot \frac{(x - \pi)^4}{4!}.$
+
+Simplify:
+$g(x) = - (x - \pi) + \frac{(x - \pi)^3}{6}.$
+
+#### Conclusion:
+The Taylor series of $g(x) = \sin(x)$ around $x = \pi$ up to the 4th degree is:
+$g(x) \approx - (x - \pi) + \frac{(x - \pi)^3}{6}.$
+
+
+![alt text](image-7.png)
+https://www.geogebra.org/calculator/x95nfj2q
