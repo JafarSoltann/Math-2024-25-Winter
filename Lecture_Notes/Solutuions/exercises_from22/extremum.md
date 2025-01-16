@@ -385,7 +385,8 @@ $\int_0^\pi x^2 \, dx = \frac{\pi^3}{3}$
 
 ### 3. Calculate the area of the region bounded by the lines:
 $x = 1$, $x = 2$, $y = 0$, and $y = x^2 + 1$. Show it in Geogebra.
-
+![alt text](image-12.png)
+https://www.geogebra.org/calculator/jak7dwpp
 ## Area of the Region Bounded by the Curves
 
 We are tasked with calculating the area of the region bounded by the lines:
@@ -438,3 +439,31 @@ The area of the region is:
 $A = \frac{10}{3}$
 
 Thus, the area of the region bounded by the lines $x = 1$, $x = 2$, $y = 0$, and $y = x^2 + 1$ is $\frac{10}{3}$ square units.
+
+
+
+
+## 4. Calculate the area under the sine curve over the interval $[0, \pi]$:
+
+We are given the integral:
+
+$P = \int_a^b f(x) \, dx = \int_0^\pi \sin(x) \, dx$
+
+**Solution:**
+
+To find the area under the curve of $\sin(x)$ from $x = 0$ to $x = \pi$, we compute the integral:
+
+$\int \sin(x) \, dx = -\cos(x) + C$
+
+Now, evaluate this from 0 to $\pi$:
+
+$P = \left[-\cos(x)\right]_0^\pi$
+
+Substituting the limits:
+
+$P = -\cos(\pi) + \cos(0)$  
+$P = -(-1) + 1 = 1 + 1 = 2$
+
+Thus, the area under the sine curve over the interval $[0, \pi]$ is:
+
+$P = 2$
