@@ -339,3 +339,44 @@ https://www.geogebra.org/calculator/jvwc2dkw
     **Solution:**  
     $(x - 1)e^x + C$
 
+### 2. Calculate integrals over the interval $[0, \pi]$ and visualize them in Geogebra:
+
+
+
+### 1. $f(x) = 2x + 1$
+![alt text](image-10.png)
+https://www.geogebra.org/calculator/vgnzgbwe
+
+**Integral:**  
+$\int_0^\pi (2x + 1) \, dx$
+
+**Solution:**  
+First, compute the indefinite integral:  
+$\int (2x + 1) \, dx = x^2 + x + C$
+
+Now, evaluate the definite integral:  
+$\int_0^\pi (2x + 1) \, dx = \left[ x^2 + x \right]_0^\pi$  
+$= (\pi^2 + \pi) - (0^2 + 0)$  
+$= \pi^2 + \pi$
+
+**Result:**  
+$\int_0^\pi (2x + 1) \, dx = \pi^2 + \pi$
+
+---
+
+### 2. $g(x) = x^2$
+
+**Integral:**  
+$\int_0^\pi x^2 \, dx$
+
+**Solution:**  
+First, compute the indefinite integral:  
+$\int x^2 \, dx = \frac{x^3}{3} + C$
+
+Now, evaluate the definite integral:  
+$\int_0^\pi x^2 \, dx = \left[ \frac{x^3}{3} \right]_0^\pi$  
+$= \frac{\pi^3}{3} - \frac{0^3}{3}$  
+$= \frac{\pi^3}{3}$
+
+**Result:**  
+$\int_0^\pi x^2 \, dx = \frac{\pi^3}{3}$
