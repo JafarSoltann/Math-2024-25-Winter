@@ -365,6 +365,8 @@ $\int_0^\pi (2x + 1) \, dx = \pi^2 + \pi$
 ---
 
 ### 2. $g(x) = x^2$
+![alt text](image-11.png)
+https://www.geogebra.org/calculator/wdmr7yuj
 
 **Integral:**  
 $\int_0^\pi x^2 \, dx$
