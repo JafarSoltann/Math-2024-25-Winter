@@ -144,3 +144,42 @@ $\cos(x) \approx 1 - \frac{x^2}{2} + \frac{x^4}{24}.$
 
 ![alt text](image-4.png)
 https://www.geogebra.org/calculator/qtjafubg
+
+
+- $h(x) = 1/(1-x)$ around $x = 0$ up to the 4rd degree.
+### Taylor Series of $h(x) = \frac{1}{1 - x}$ around $x = 0$ up to the 4th degree
+
+To find the Taylor series of $h(x) = \frac{1}{1 - x}$ around $x = 0$ up to the 4th degree, follow these steps:
+
+#### 1. Find the derivatives of $h(x) = \frac{1}{1 - x}$:
+- $h(x) = \frac{1}{1 - x}$
+- $h'(x) = \frac{1}{(1 - x)^2}$
+- $h''(x) = \frac{2}{(1 - x)^3}$
+- $h^{(3)}(x) = \frac{6}{(1 - x)^4}$
+- $h^{(4)}(x) = \frac{24}{(1 - x)^5}$
+
+#### 2. Evaluate the derivatives at $x = 0$:
+- $h(0) = \frac{1}{1 - 0} = 1$
+- $h'(0) = \frac{1}{(1 - 0)^2} = 1$
+- $h''(0) = \frac{2}{(1 - 0)^3} = 2$
+- $h^{(3)}(0) = \frac{6}{(1 - 0)^4} = 6$
+- $h^{(4)}(0) = \frac{24}{(1 - 0)^5} = 24$
+
+#### 3. Write the Taylor series formula:
+The Taylor series around $x = 0$ is given by:
+$h(x) = h(0) + h'(0) \frac{x}{1!} + h''(0) \frac{x^2}{2!} + h^{(3)}(0) \frac{x^3}{3!} + h^{(4)}(0) \frac{x^4}{4!} + \cdots$
+
+#### 4. Substitute the values into the series:
+Substitute the derivatives evaluated at $x = 0$ into the formula:
+$h(x) = 1 + 1 \cdot \frac{x}{1!} + 2 \cdot \frac{x^2}{2!} + 6 \cdot \frac{x^3}{3!} + 24 \cdot \frac{x^4}{4!}$
+
+Simplify:
+$h(x) = 1 + x + x^2 + x^3 + x^4$
+
+#### Conclusion:
+The Taylor series of $ \frac{1}{1 - x} $ around $ x = 0 $ up to the 4th degree is:
+$h(x) \approx 1 + x + x^2 + x^3 + x^4$
+
+
+![alt text](image-5.png)
+https://www.geogebra.org/calculator/xcnegeya
