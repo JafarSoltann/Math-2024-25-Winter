@@ -490,7 +490,7 @@ $L \approx 3.8202$
 
 Thus, the length of the sine curve over the interval $[0, \pi]$ is approximately **3.8202**.
 
-## 24. Distance of a Moving Particle
+## 5. Distance of a Moving Particle
 
 Given the position function $x(t) = 3t^2 - 6t + 1$, we need to find the distance of the moving particle between time $t=0$ and $t=2$.
 
