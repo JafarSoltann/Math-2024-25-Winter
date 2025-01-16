@@ -603,7 +603,7 @@ $y(x) = \pm \sqrt{x + C}$
    - $\frac{dy}{dx} = xy$
 
 ![alt text](image-14.png)
-## 24. Solve the First-Order Ordinary Differential Equations Using the Method of Separation of Variables
+### 4. Solve the First-Order Ordinary Differential Equations Using the Method of Separation of Variables
 
 ### 1. Solve $\frac{dy}{dx} = \frac{x}{y}$
 
