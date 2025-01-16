@@ -698,7 +698,7 @@ $y(x) = C_2 e^{\frac{x^2}{2}}$
 
    * $\frac{d^2\,y(x)}{dx^2} = -\omega^2 y(x)$.
 
-   ## 24. Solve the Second-Order Ordinary Differential Equations
+   ### 4. Solve the Second-Order Ordinary Differential Equations
 
 ### 1. Solve $y''(x) + y'(x) = 0$, with boundary conditions $y(0) = 2$ and $y'(0) = -1$
 
