@@ -275,3 +275,5 @@ $$y = -x + \pi + 1$$
 The tangent line to the curve $f(x) = e^{\sin(x)}$ at $x_0 = \pi$ is:
 
 $$y = -x + \pi + 1$$
+![alt text](image-8.png)
+https://www.geogebra.org/calculator/jvwc2dkw
