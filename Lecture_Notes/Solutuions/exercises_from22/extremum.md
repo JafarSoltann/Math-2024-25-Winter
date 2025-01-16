@@ -223,3 +223,55 @@ $g(x) \approx - (x - \pi) + \frac{(x - \pi)^3}{6}.$
 
 ![alt text](image-7.png)
 https://www.geogebra.org/calculator/x95nfj2q
+
+2. Find a tangent line $y = f'(x_0) (x-x_0) + f(x_0)$ to the function $f(x) = e^{\sin(x)}$ at $x_0 = \pi$. Hints for Geogebra visualization: define f(x), include slider s, define y = f'(s) (x-s) + f(s), and include point P(s, f(s)).
+
+### Tangent Line to $f(x) = e^{\sin(x)}$ at $x_0 = \pi$
+
+We are tasked with finding the equation of the tangent line to the function $f(x) = e^{\sin(x)}$ at the point $x_0 = \pi$.
+
+#### 1. Find the derivative of $f(x)$:
+
+We differentiate $f(x) = e^{\sin(x)}$ using the chain rule:
+
+$$f'(x) = e^{\sin(x)} \cdot \cos(x)$$
+
+#### 2. Evaluate the derivative at $x_0 = \pi$:
+
+Substitute $x_0 = \pi$ into the derivative:
+
+$$f'(\pi) = e^{\sin(\pi)} \cdot \cos(\pi)$$
+
+Since $\sin(\pi) = 0$ and $\cos(\pi) = -1$, we get:
+
+$$f'(\pi) = e^0 \cdot (-1) = -1$$
+
+#### 3. Find $f(\pi)$:
+
+Now, evaluate the function at $x_0 = \pi$:
+
+$$f(\pi) = e^{\sin(\pi)} = e^0 = 1$$
+
+#### 4. Equation of the Tangent Line:
+
+The general formula for the equation of the tangent line to the function $f(x)$ at $x_0$ is:
+
+$$y = f'(x_0)(x - x_0) + f(x_0)$$
+
+Substitute $f'(\pi) = -1$, $f(\pi) = 1$, and $x_0 = \pi$ into the formula:
+
+$$y = -1(x - \pi) + 1$$
+
+Simplify the equation:
+
+$$y = -x + \pi + 1$$
+
+Thus, the equation of the tangent line to the function $f(x) = e^{\sin(x)}$ at $x_0 = \pi$ is:
+
+$$y = -x + \pi + 1$$
+
+### Conclusion:
+
+The tangent line to the curve $f(x) = e^{\sin(x)}$ at $x_0 = \pi$ is:
+
+$$y = -x + \pi + 1$$
