@@ -805,3 +805,76 @@ Therefore, the general solution is:
 $y(x) = C_1 \cos(\omega x) + C_2 \sin(\omega x)$
 
 This is the general solution for the differential equation.
+
+### 5. Check if the function $\psi(t, x) = A \cos(\omega t + kx)$ is a solution of the second-order partial differential equation (the so-called "wave equation"), where $v = \frac{\omega}{k} = \frac{2\pi / T}{2\pi / \lambda}$:
+
+$$
+\frac{\partial^2 \psi(t, x)}{\partial t^2} - v^2 \frac{\partial^2 \psi(t, x)}{\partial x^2} = 0.
+$$
+
+
+The wave equation is:
+
+$\frac{\partial^2 \psi(t, x)}{\partial t^2} - v^2 \frac{\partial^2 \psi(t, x)}{\partial x^2} = 0,$
+
+where $v = \frac{\omega}{k} = \frac{2\pi / T}{2\pi / \lambda}$.
+
+### Solution:
+
+We are given the function $\psi(t, x) = A \cos(\omega t + kx)$ and we need to check if it satisfies the wave equation.
+
+#### Step 1: Compute $\frac{\partial^2 \psi(t, x)}{\partial t^2}$.
+
+The first derivative with respect to $t$ is:
+
+$\frac{\partial \psi(t, x)}{\partial t} = A \frac{\partial}{\partial t} \cos(\omega t + kx) = -A \omega \sin(\omega t + kx).$
+
+The second derivative with respect to $t$ is:
+
+$\frac{\partial^2 \psi(t, x)}{\partial t^2} = -A \omega \frac{\partial}{\partial t} \sin(\omega t + kx) = -A \omega^2 \cos(\omega t + kx).$
+
+Thus, we have:
+
+$\frac{\partial^2 \psi(t, x)}{\partial t^2} = -A \omega^2 \cos(\omega t + kx).$
+
+#### Step 2: Compute $\frac{\partial^2 \psi(t, x)}{\partial x^2}$.
+
+The first derivative with respect to $x$ is:
+
+$\frac{\partial \psi(t, x)}{\partial x} = A \frac{\partial}{\partial x} \cos(\omega t + kx) = -A k \sin(\omega t + kx).$
+
+The second derivative with respect to $x$ is:
+
+$\frac{\partial^2 \psi(t, x)}{\partial x^2} = -A k \frac{\partial}{\partial x} \sin(\omega t + kx) = -A k^2 \cos(\omega t + kx).$
+
+Thus, we have:
+
+$\frac{\partial^2 \psi(t, x)}{\partial x^2} = -A k^2 \cos(\omega t + kx).$
+
+#### Step 3: Substitute into the wave equation.
+
+Substitute the expressions for $\frac{\partial^2 \psi(t, x)}{\partial t^2}$ and $\frac{\partial^2 \psi(t, x)}{\partial x^2}$ into the wave equation:
+
+$\frac{\partial^2 \psi(t, x)}{\partial t^2} - v^2 \frac{\partial^2 \psi(t, x)}{\partial x^2} = -A \omega^2 \cos(\omega t + kx) - v^2 (-A k^2 \cos(\omega t + kx)).$
+
+Simplifying:
+
+$-A \omega^2 \cos(\omega t + kx) + A v^2 k^2 \cos(\omega t + kx) = 0.$
+
+Factor out $-A \cos(\omega t + kx)$:
+
+$-A \cos(\omega t + kx) (\omega^2 - v^2 k^2) = 0.$
+
+Since $\cos(\omega t + kx)$ is not identically zero, the equation will hold true if:
+
+$\omega^2 - v^2 k^2 = 0.$
+
+Using the relation $v = \frac{\omega}{k}$, we have:
+
+$\omega^2 - \left( \frac{\omega}{k} \right)^2 k^2 = 0,$
+
+which simplifies to:
+
+$\omega^2 - \omega^2 = 0.$
+
+Thus, the equation is satisfied, and $\psi(t, x) = A \cos(\omega t + kx)$ is indeed a solution of the wave equation.
